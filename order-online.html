@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			.order_online {
+				width: 100%;
+
+				margin-top: 20px;
+				height: 300px;
+			}
+			/* Container holding the image and the text */
+			.container {
+				position: relative;
+				text-align: center;
+				color: cornflowerblue;
+				font-size: 60px;
+			}
+			/* Centered text */
+			.centered {
+				position: absolute;
+				top: 30%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			/* centere bottom content text */
+			.small_data {
+				margin-top: 80px;
+				color: aliceblue;
+				font-size: 30px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			/*arranging the data at center after image */
+			.top-title3 {
+				font-family: sans-serif;
+				margin: 50px auto;
+				color: #5c7f36;
+				text-align: center;
+				font-size: 20px;
+				max-width: 600px;
+				position: relative;
+			}
+			.top-title3:before {
+				content: "";
+				display: block;
+				width: 60px;
+				height: 2px;
+				background: #5c7f36;
+				left: 77%;
+				top: 50%;
+				position: absolute;
+			}
+			.top-title3:after {
+				content: "";
+				display: block;
+				width: 60px;
+				height: 2px;
+				background: #5c7f36;
+				right: 77%;
+				top: 50%;
+				position: absolute;
+			}
+            .content_middle, #list_items{
+                font-size: 20px;
+                color: rgb(70, 64, 64);
+                line-height: 30px;
+                margin-left: 20px;
+
+            }
+            #list_items{
+                margin-left: 60px;
+            }
+            
+           
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<img
+				class="order_online"
+				src="https://images.squarespace-cdn.com/content/v1/518ea9e4e4b0eb1ecff22776/1505338359278-ZR0NGOOVNIMBNDWKECZL/ke17ZwdGBToddI8pDm48kMbbYEFgw4jm354A2z0Ndf4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcy8llUarnDEzHipvAcrJX1qxj3VfHtSN6k1cnz1ezsgbIFwABDbv2KsGrErEkYtGf/ordering+food+online?format=1000w"
+				alt=" "
+			/>
+			<div class="centered">Order Online</div>
+			<p class="small_data">
+				We bring to you the unforgetable moment with our delicious dishes
+			</p>
+		</div>
+		<p class="top-title3">STEP BY STEP PROCEDURE</p>
+		<br /><br />
+		<p class="content_middle">
+			The FoodXprs Lunch Services Pvt Ltd works just like packed food delivered
+			on monthly basis prepared from the wide range of vegetables, pulses,
+			fruits,</br> breads in a combination of four types of lunch boxes.
+		</p>
+        <div id="list_items">
+            <li>Select Your Location</li>
+            <li>Select Your Meal Preference</li>
+            <li>Make Payment</li>
+        </div>
+	</body>
+</html>
