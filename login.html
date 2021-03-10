@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        #anwar-login-container{
+            width: 80%;
+            margin: auto;
+        }
+        .anwar-log-border {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            border-style: groove;
+        }
+        .anwar-log-border > input {
+            padding: 15px;
+            background-color: rgb(238, 238, 238);
+            border: grey;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+
+
+    <div id="anwar-login-container">
+        <h2>Login</h2>
+
+        <div class="anwar-log-border">
+            Username: <input type="text" id="user2" placeholder="Enter Your Username">
+            Password: <input type="password" id="pass2" placeholder="Enter Your Password">
+        </div>
+        <button onclick="login()">LOGIN</button>
+    </div>
+
+
+
+
+
+    <script>
+         function login(){
+            var user2 = document.getElementById('user2').value;
+            var pass2 = document.getElementById('pass2').value;
+
+            var user = localStorage.getItem('user')
+            var pass = localStorage.getItem('pass')
+
+            localStorage.setItem('user2',user2)
+            localStorage.setItem('pass2',pass2)
+
+
+            if(user == user2 && pass == pass2) {
+                window.location.href = "home-about.html";
+            } else {
+                alert("Invalid Username or Password")
+            }
+        }
+    </script>
+</body>
+</html>
