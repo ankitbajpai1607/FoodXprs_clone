@@ -1,17 +1,51 @@
+.order_online {
+	width: 100%;
+
+	margin-top: 20px;
+	height: 300px;
+}
+/* Container holding the image and the text */
+.container {
+	position: relative;
+	text-align: center;
+	color: orangered;
+
+	font-size: 60px;
+}
+/* Centered text */
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* centere bottom content text */
+.small_data {
+	margin-top: 80px;
+	color: aliceblue;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 #layout {
 	margin-left: 20px;
 	display: grid;
-	gap: 15px;
-	grid-template: "b1 b2 b3 b4";
+	gap: -15px;
+	grid-template:
+		"b1 b2 "
+		"b3 b4";
 }
 #layout > div:hover {
 	border-bottom: 3px solid #5c7f36;
 }
 #box1 {
 	margin-top: 30px;
-	width: 250px;
+	width: 500px;
 	grid-area: b1;
-	height: 310px;
+	height: 350px;
 	border: 1px solid white;
 	/* float: left; */
 	box-shadow: 5px 5px 20px grey;
@@ -19,8 +53,8 @@
 #box2 {
 	grid-area: b2;
 	margin-top: 30px;
-	width: 250px;
-	height: 310px;
+	width: 500px;
+	height: 350px;
 	border: 1px solid white;
 	/* float: left; */
 	box-shadow: 5px 5px 20px grey;
@@ -28,8 +62,8 @@
 #box3 {
 	grid-area: b3;
 	margin-top: 30px;
-	width: 250px;
-	height: 310px;
+	width: 500px;
+	height: 350px;
 	border: 1px solid white;
 	/* float: left; */
 	box-shadow: 5px 5px 20px grey;
@@ -37,8 +71,8 @@
 #box4 {
 	grid-area: b4;
 	margin-top: 30px;
-	width: 250px;
-	height: 310px;
+	width: 500px;
+	height: 350px;
 	border: 1px solid white;
 	/* float: left; */
 	box-shadow: 5px 5px 20px grey;
@@ -46,8 +80,8 @@
 #box5 {
 	grid-area: b5;
 	margin-top: 30px;
-	width: 250px;
-	height: 310px;
+	width: 500px;
+	height: 350px;
 	border: 1px solid white;
 	margin-left: 20px;
 	box-shadow: 5px 5px 20px grey;
@@ -122,7 +156,7 @@ p {
 	position: absolute;
 }
 .image {
-	width: 250px;
+	width: 500px;
 	height: 200px;
 }
 /* Quick-zoom Container */
@@ -155,4 +189,21 @@ p {
 	font-size: 15px;
 	color: rgb(92, 88, 88);
 	margin-left: 10px;
+}
+
+.price_month {
+	margin-top: -20px;
+	margin-right: 30px;
+	float: right;
+	width: 150px;
+	height: 70px;
+	border: 1px solid #5c7f36;
+	border-radius: 50%;
+	background-color: #5c7f36;
+}
+.cost_month {
+	color: white;
+	margin-left: 25px;
+	margin-top: 20px;
+	font-size: 15px;
 }
