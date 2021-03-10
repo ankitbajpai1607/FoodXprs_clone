@@ -1,4 +1,4 @@
-var h = ["https://i.postimg.cc/jdHG363D/fourth.png","https://i.postimg.cc/5tVjdmbD/second.png", "https://i.postimg.cc/1XCy8GxR/sixxxx.jpg"]
+var h = ["https://i.postimg.cc/jdHG363D/fourth.png", "https://i.postimg.cc/5tVjdmbD/second.png", "https://i.postimg.cc/1XCy8GxR/sixxxx.jpg"]
 
 
 
@@ -51,4 +51,3 @@ var seet = setInterval(nilop, 2000)
 function stop1() {
     clearInterval(seet)
 }
-

@@ -8,6 +8,7 @@
 #images11 {
 
     height: 350px;
+    border: 0.5 px solid whitesmoke;
 
     margin-top: 20px;
 
@@ -38,4 +39,23 @@
 .active,
 .dot22:hover {
     background-color: #717171;
+}
+
+.prev22 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+   
+    padding: 16px;
+  
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    margin-top: -190px;
+    margin-left: 430px;
+}
+.prev22:hover {
+background-color: rgba(0, 0, 0, 0.8);
 }
