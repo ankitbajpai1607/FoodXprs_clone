@@ -2,64 +2,170 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style type="text/css">
+        #nil1 {
 
-    <link rel="stylesheet" href="Page1nil.css">
+            height: 400px;
+            text-align: center;
+
+        }
+
+        #images11 {
+
+            height: 350px;
+            border: 0.5 px solid whitesmoke;
+
+            margin-top: 20px;
+
+
+        }
+
+        #buttn2 {
+            padding: 10px;
+            width: 100px;
+            color: darkblue;
+            margin-top: 20px;
+
+
+
+        }
+
+        .dot22 {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot22:hover {
+            background-color: #717171;
+        }
+
+        .prev22 {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+           
+            padding: 16px;
+          
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            margin-top: -190px;
+            margin-left: 430px;
+        }
+        .prev22:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+    </style>
+
 </head>
+<!-- style="background-color: rgb(25, 158, 25); -->
 
 <body>
 
-
-
-    <div class="slideshow-container">
-
-        <div class="mySlides fade">
-            <div class="numbertext12">
-                <h3 class="title-animated">Get Your Lunch Meal At <br><span class="text-large23">Rs 60*</span>
-                    &amp; Free
-                    Delivery</h3> <button id="order-buttn"><a href=""><span class="order-1">Order
-                            Now</span></a></button>
-            </div>
-
-            <img src="https://foodxprs.com/assets/images/slider/home-cooked-healthy-food-delivery-services-hyderabad.jpg"
-                style="width:120%">
-            <div class="text21">Caption Text</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext12">
-                <h3 class="title-animated">Get Your cashback <br><span class="text-large23">Rs 50*</span>
-                    On Refral</h3> <button id="order-buttn"><a href="#"><span class="order-1">Order
-                            Now</span></a></button>
-            </div>
-
-            <img src="https://foodxprs.com/assets/images/slider/best-lunch-box-food-delivery-service-hyderabad.jpg"
-                style="width:120%">
-            <div class="text21">Caption Text</div>
-        </div>
+    <a class="prev22" onclick="plusSlides(-1)">&#10094;</a>
 
 
 
-        <a class="prev22" onclick="plusSlides(-1)">&#10094;</a>
-       
+    <div id="nil1" style="background-color: rgb(25, 158, 25); width: 100%;">
 
         
 
+        <img src="https://i.postimg.cc/1XCy8GxR/sixxxx.jpg" id="images11">
+
+
+      
+
+
+
+
     </div>
-    <br>
+
+    
+  
+    <br />
 
     <div style="text-align:center;">
-        <span class="dot22" onclick="currentSlide(1)"></span>
-        <span class="dot22" onclick="currentSlide(2)"></span>
+        <span class="dot22" onclick="currentSlide()"></span>
+        <span class="dot22" onclick="currentSlide2()"></span>
+        <span class="dot22" onclick="currentSlide3()"></span>
+        <span class="dot22" onclick="currentSlide()"></span>
 
     </div>
 
 
 
-    <script src="page1nil.js"></script>
+
+
+    <button onclick="stop1()" id="buttn2">Stop</button>
+
+    <script>
+
+        var h = ["https://i.postimg.cc/jdHG363D/fourth.png", "https://i.postimg.cc/5tVjdmbD/second.png", "https://i.postimg.cc/1XCy8GxR/sixxxx.jpg"]
+
+
+
+
+
+
+
+        var i = 0;
+
+        function nilop() {
+
+
+
+
+
+            document.getElementById("images11").src = h[i];
+
+            if (i < (h.length - 1)) {
+                i++;
+
+
+            }
+            else {
+                i = 0;
+            }
+
+        }
+
+        function currentSlide() {
+
+
+            document.getElementById("images11").src = h[0];
+
+        }
+        function currentSlide2() {
+
+
+            document.getElementById("images11").src = h[1];
+
+        }
+        function currentSlide3() {
+
+
+            document.getElementById("images11").src = h[2];
+
+        }
+
+        var seet = setInterval(nilop, 2000)
+
+        function stop1() {
+            clearInterval(seet)
+        }
+
+
+    </script>
 
 </body>
 

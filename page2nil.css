@@ -86,3 +86,58 @@ border: 1px solid;
 
 
 /* <page2nilcsss></page2nilcsss> */
+
+
+#whatsapp-btn {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 400;
+    line-height: 1.714;
+    color: #616f7d;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 90px;
+    left: 20px;
+    z-index: 99;
+    width: 50px;
+
+}
+
+#fa-fa-whatsapp {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 400;
+    line-height: 1.714;
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: color 0.3s ease;
+    outline: 0;
+    text-decoration: none;
+    color: #5c7f36;
+}
+.box-option {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 400;
+    line-height: 1.714;
+    color: #616f7d;
+    box-sizing: border-box;
+    background-color: #ECE5DD;
+    width: 140px;
+    padding: 10px;
+    position: absolute;
+    bottom: 5px;
+    border-radius: 10px;
+    border: 1px solid #d2ccc5;
+    display: none;
+}
+.wssp_img {
+    width: 50px;
+    height: 50px;
+}
