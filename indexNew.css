@@ -32,6 +32,13 @@ body{
     width: 15px;
     
 }
+.icon {
+    
+    background: #5c7f36;
+    color: white;
+    
+    
+}
 
 /* <!-- navigation bar2 --> */
 header{
@@ -58,6 +65,7 @@ header{
 .nav_bar{
     display: none;
 }
+
 .nav_icon{
     display: block;
     width: 30px;
