@@ -193,7 +193,10 @@ header{
     
 }
 ul{
-    text-decoration : none!important;
+    list-style-type : none!important;
+}
+ul :hover{
+    list-style-type: block;
 }
 #f_contact>div:nth-child(3)>div:nth-child(3)>div:nth-child(1){
     float: left;
