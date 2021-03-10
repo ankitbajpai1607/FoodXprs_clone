@@ -1,67 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        #anwar-login-container{
+        #anwar-reg-container {
             width: 80%;
             margin: auto;
-        }
-        .anwar-log-border {
-            width: 80%;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
+            margin-top: 30px;
+            margin-bottom: 100px;
             border-style: groove;
         }
-        .anwar-log-border > input {
-            padding: 15px;
-            background-color: rgb(238, 238, 238);
+
+        .anwar-reg-box {
+            width: 90%;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .anwar-reg-box>div {
+            padding: 20px;
+
             border: grey;
+
+
+        }
+
+        .anwar-reg-box input {
+            width: 90%;
+            padding: 10px;
+            outline: none;
+            background-color: rgb(238, 238, 238);
+            border: none;
+            border-left: 1px solid gray;
+
+
+        }
+
+        .anwar-reg-box>h2 {
+
+            margin: auto;
+            font-size: 30px;
+        }
+
+        .anwar-reg-btn {
+            padding: 10px;
+            width: 200px;
+            color: white;
+            background-color: #658F39;
+            border-radius: 100px;
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        .anwar-reg-btn:hover {
+            background-color: rgb(68, 97, 10);
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .background-img {
+            background-image: url('https://cdn.pixabay.com/photo/2016/12/09/11/33/smartphone-1894723_960_720.jpg');
+            height: 200px;
+            width: 100%;
+
+        }
+
+        .reg-page-heading {
+            width: 20%;
+            margin: auto;
+            padding: 80px;
+            font-size: 40px;
+            color: #658F39;
+        }
+
+        .icon {
+            padding: 10px;
+            background: #658F39;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+        .icon:hover{
+            opacity: 0.8;
         }
     </style>
 </head>
+
 <body>
-    
+    <div class="background-img">
+        <h1 class="reg-page-heading">LOGIN PAGE</h1>
 
-
-
-
-    <div id="anwar-login-container">
-        <h2>Login</h2>
-
-        <div class="anwar-log-border">
-            Username: <input type="text" id="user2" placeholder="Enter Your Username">
-            Password: <input type="password" id="pass2" placeholder="Enter Your Password">
-        </div>
-        <button onclick="login()">LOGIN</button>
     </div>
 
 
 
 
 
+
+
+
+
+
+
+
+    <h2
+        style="text-align: center; margin: 100px 0px 0px 0px; font-size: 30px; text-decoration: underline; color: #658F39;">
+        Login Form</h2>
+
+    <div id="anwar-reg-container">
+
+        <form class="anwar-reg-box">
+
+            <div>
+                <i class="fa fa-user icon"></i>
+                <input type="text" required="required" id="user2" placeholder="Enter Your Username">
+            </div>
+            <div>
+                <i class="fa fa-key icon"></i>
+                <input type="password" required="required" id="pass2" placeholder="Enter Your Password">
+            </div>
+
+        </form>
+        <div style="text-align: center; "><button class="anwar-reg-btn" onclick="login()">LOGIN</button></div>
+    </div>
+
+
+
+
+
+
+
     <script>
-         function login(){
-            var user2 = document.getElementById('user2').value;
-            var pass2 = document.getElementById('pass2').value;
+        function login() {
+            var user2 = document.querySelector('#user2').value;
+            var pass2 = document.querySelector('#pass2').value;
 
             var user = localStorage.getItem('user')
             var pass = localStorage.getItem('pass')
 
-            localStorage.setItem('user2',user2)
-            localStorage.setItem('pass2',pass2)
 
+            //console.log(user2,pass2,user,pass)
 
-            if(user == user2 && pass == pass2) {
-                window.location.href = "home-about.html";
+            if (user == user2) {
+                console.log(user == user2)
+                if (pass == pass2) {
+                    console.log(pass == pass2)
+                    window.location.href = "home-about.html";
+                }
             } else {
                 alert("Invalid Username or Password")
             }
         }
     </script>
 </body>
+
 </html>
