@@ -109,9 +109,14 @@ header{
 
   /* <!-- footer part --> */
 
-.footer{
+.footer-box{
+    background-color: #5c7f36;
     width: 100%;
-    padding: 25px 240px;
+    padding: 25px 80px;
+}
+.footer{
+    width: 80%;
+    margin: auto;
     background-color: #5c7f36;
     color: #fff;
     display: grid;
@@ -168,13 +173,15 @@ header{
 
 #f_contact>div:nth-child(3)>div:nth-child(1)>div:nth-child(1){
     float: left;
-    width: 2%;
+    width: 4%;
+    margin-right: 5px;
+    text-align: center;
     border-bottom: 1px solid #fff;
     
 }
 #f_contact>div:nth-child(3)>div:nth-child(1)>div:nth-child(2){
     float: right;
-    width: 95%;
+    width: 94%;
     margin-top: 0px;
     
     
@@ -185,15 +192,19 @@ header{
     
     
 }
+ul{
+    text-decoration : none!important;
+}
 #f_contact>div:nth-child(3)>div:nth-child(3)>div:nth-child(1){
     float: left;
-    width: 2%;
+    width: 4%;
+    margin-right: 5px;
     border-bottom: 1px solid #fff;
     
 }
 #f_contact>div:nth-child(3)>div:nth-child(3)>div:nth-child(2){
     float: right;
-    width: 95%;
+    width: 94%;
     
     
     
