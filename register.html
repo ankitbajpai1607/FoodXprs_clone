@@ -11,65 +11,92 @@
         #anwar-reg-container {
             width: 80%;
             margin: auto;
-            margin-top: 100px;
+            margin-top: 30px;
             margin-bottom: 100px;
+            border-style: groove;
         }
 
         .anwar-reg-box {
-            width: 80%;
+            width: 90%;
             margin: auto;
-            border-style: groove;
+
             display: flex;
             flex-direction: column;
         }
 
         .anwar-reg-box>div {
             padding: 20px;
-            background-color: rgb(238, 238, 238);
+
             border: grey;
-            
+
+
         }
+
         .anwar-reg-box input {
-            width: 95%;
+            width: 90%;
             padding: 10px;
             outline: none;
-  
+            background-color: rgb(238, 238, 238);
+            border: none;
+            border-left: 1px solid gray;
+
+
         }
-        .anwar-reg-box > h2 {
-            text-decoration: underline;
+
+        .anwar-reg-box>h2 {
+
+            margin: auto;
+            font-size: 30px;
         }
-        
+
         .anwar-reg-btn {
             padding: 10px;
             width: 200px;
             color: white;
-            background-color: rgb(33, 121, 11);
-            border-radius: 10px;
+            background-color: #658F39;
+            border-radius: 100px;
             font-size: 20px;
+            margin: 20px;
         }
+
         .anwar-reg-btn:hover {
             background-color: rgb(68, 97, 10);
+            opacity: 0.8;
+            text-decoration: underline;
         }
+
         .background-img {
             background-image: url('https://cdn.pixabay.com/photo/2016/12/09/11/33/smartphone-1894723_960_720.jpg');
             height: 200px;
             width: 100%;
-            
+
         }
+
         .reg-page-heading {
             width: 30%;
             margin: auto;
             padding: 80px;
             font-size: 40px;
-            color: rgb(33, 121, 11);
+            color: #658F39;
+        }
+
+        .icon {
+            padding: 10px;
+            background: #658F39;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+        .icon:hover{
+            opacity: 0.8;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="background-img"> 
-        <h1 class="reg-page-heading" >REGISTER PAGE</h1>
+    <div class="background-img">
+        <h1 class="reg-page-heading">REGISTER PAGE</h1>
 
     </div>
 
@@ -84,42 +111,44 @@
 
 
 
-
+    <h2
+        style="text-align: center; margin: 100px 0px 0px 0px; font-size: 30px; text-decoration: underline; color: #658F39;">
+        Register Form</h2>
 
     <div id="anwar-reg-container">
+
         <form class="anwar-reg-box">
-            <h2>Register Form</h2>
+
             <div>
                 <i class="fa fa-user icon"></i>
-                <input type="text" required = "required" id="anwar-name" placeholder="Enter Your Name">
+                <input type="text" required="required" id="anwar-name" placeholder="Enter Your Name">
             </div>
             <div>
                 <i class="fa fa-phone icon"></i>
-                <input type="tel" required = "required" id="anwar-mob" placeholder="Enter Your Mob No">
+                <input type="tel" required="required" id="anwar-mob" placeholder="Enter Your Mob No">
             </div>
             <div>
                 <i class="fa fa-envelope icon"></i>
-                <input type="email" required = "required" id="anwar-email" placeholder="Enter Your Email">
+                <input type="email" required="required" id="anwar-email" placeholder="Enter Your Email">
             </div>
             <div>
                 <i class="fa fa-user icon"></i>
-                <input type="text" required = "required" id="anwar-user" placeholder="Enter Your Username">
+                <input type="text" required="required" id="anwar-user" placeholder="Enter Your Username">
             </div>
             <div>
                 <i class="fa fa-key icon"></i>
-                <input type="password" required = "required" id="anwar-pass" placeholder="Enter Your Password">
+                <input type="password" required="required" id="anwar-pass" placeholder="Enter Your Password">
             </div>
             <div>
                 <i class="fa fa-key icon"></i>
-                <input type="password" required = "required" id="anwar-Cpass" placeholder="Enter Your Password Again">
+                <input type="password" required="required" id="anwar-Cpass" placeholder="Enter Your Password Again">
             </div>
-            <div>
+            <!-- <div>
                 <i class="fa fa-address-card"></i>
                 <input type="text" required = "required" id="anwar-add" placeholder="Enter Your Full Address">
-            </div>
-
-            <div style="text-align: center;"><button class="anwar-reg-btn" onclick="register()">REGISTER</button></div>
+            </div> -->
         </form>
+        <div style="text-align: center; "><button class="anwar-reg-btn" onclick="register()">REGISTER</button></div>
     </div>
 
     <script>
@@ -130,21 +159,13 @@
             var user = document.getElementById("anwar-user").value
             var pass = document.getElementById("anwar-pass").value
             var Cpass = document.getElementById("anwar-Cpass").value
-            var add = document.getElementById("anwar-add").value
-
-        if(mob.length < 10 || mob.length > 10) {
-            alert('Invalid Number')
-        } 
-
-        for (var i = 0; i < pass.length; i++){
-            if(pass[i] !=Cpass[i]){
-                alert('Password & Confirm Password did not match')
-            }
-        }
+            
 
 
-
-
+            if(mob.length < 10 || mob.length > 10){
+                alert("Please Enter 10 digit Mobile Number")
+                
+            } 
 
             localStorage.setItem('name', name)
             localStorage.setItem('mob', mob)
@@ -152,7 +173,13 @@
             localStorage.setItem('user', user)
             localStorage.setItem('pass', pass)
             localStorage.setItem('Cpass', Cpass)
-            localStorage.setItem('Address', add)
+
+           
+
+
+
+            
+            
         }
 
 
