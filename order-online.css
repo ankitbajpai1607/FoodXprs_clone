@@ -75,6 +75,7 @@
 	margin-top: 20px;
 	display: block;
 	margin-left: 20px;
+
 	margin-right: auto;
 }
 
@@ -88,8 +89,17 @@
 	margin-top: 30px;
 }
 
+.icon:hover {
+	color: rgb(32, 26, 26);
+}
+.icon {
+	fill: #000;
+	background: #5c7f36;
+}
+
 .icon {
 	padding: 10px;
+
 	background: rgb(173, 169, 169);
 	color: white;
 	min-width: 50px;

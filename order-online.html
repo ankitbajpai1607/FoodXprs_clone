@@ -50,13 +50,13 @@
                         placeholder="Username"
                         name="user_name"
                         id="uname"
-                        required
+                        
                     />
                 </div>
     
                 <div class="input-container" id="resp2">
                     <i class="material-icons  icon">&#xe569</i>
-                    <select name="location" class="input-field " id="location1" required>
+                    <select name="location" class="input-field " id="location1" >
                         <option value="Select Your Location">Select Your Location</option>
                         <option value="Hitech City">Hitech City</option>
                         <option value="Madhapur">Madhapur</option>
@@ -73,7 +73,7 @@
     
                 <div class="input-container" id="resp3">
                     <i class="material-icons icon">&#xe56c;</i>
-                    <select name="Receipe" class="input-field" id="food_type" required>
+                    <select name="Receipe" class="input-field" id="food_type" >
                         <option value="Select Your Meal Preference">Select Your Meal Preference</option>
                         <option value="Xprs Millet">Xprs Millet</option>
                         <option value="Xprs Classic">Xprs Classic</option>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="input-container" id="resp4">
                     <i class="material-icons icon">&#xe8b0;</i>
-                    <input   class="input-field"   type="date" id="data_order" required/>
+                    <input   class="input-field"   type="date" id="data_order" />
                 </div>
                 <p class="note"><b class="note2">Note:</b> Accept only Online payment</p>
     
@@ -113,19 +113,18 @@
 
           <!-- And the validation on user login is below,
 
-function validateForm() {
-  var x = document.forms["myForm"]["uname"].value;
-  if (x == "") {
-    alert("The username shouldn't be empty");
-    return false;
-  }
-} -->
-       
-        <script src="./order-online.js"> </script>
+// function validateForm() {
+//   var x = document.forms["myForm"]["user_name"].value;
+//   if (x == "") {
+//     alert("The username shouldn't be empty");
+//     return false;
+//   }
+// } 
 
-            
-            
+// validateForm()-->
        
+        <!-- <script src="./order-online.js"> </script> -->
+    <script src="order-online.js"></script>
 
 	</body>
 </html>
