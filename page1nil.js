@@ -1,53 +1,26 @@
-var h = ["https://i.postimg.cc/jdHG363D/fourth.png", "https://i.postimg.cc/5tVjdmbD/second.png", "https://i.postimg.cc/1XCy8GxR/sixxxx.jpg"]
+var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-
-
-
-
-var i = 0;
-
-function nilop() {
-
-
-
-
-
-    document.getElementById("images11").src = h[i];
-
-    if (i < (h.length - 1)) {
-        i++;
-
-
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-    else {
-        i = 0;
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
     }
-
-}
-
-function currentSlide() {
-
-
-    document.getElementById("images11").src = h[0];
-
-}
-function currentSlide2() {
-
-
-    document.getElementById("images11").src = h[1];
-
-}
-function currentSlide3() {
-
-
-    document.getElementById("images11").src = h[2];
-
-}
-
-var seet = setInterval(nilop, 2000)
-
-function stop1() {
-    clearInterval(seet)
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
