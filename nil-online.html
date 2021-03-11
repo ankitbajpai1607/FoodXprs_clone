@@ -409,9 +409,12 @@
 
         function onloadonline() {
 
-            var mealpreference = 3
 
-            if (mealpreference == 0) {
+            localStorage.clear("total amount");
+
+            var mealpreference = localStorage.getItem("Food").value
+
+            if (mealpreference == "Xprs Millet") {
 
 
                 var popcorn = document.getElementById("xprs_L")
@@ -424,6 +427,8 @@
 
                 var popcorn23 = document.getElementById("purchase_095")
                 popcorn23.innerText = "₹2250"
+
+                localStorage.setItem("total amount","₹2250")
 
 
                 var h = "https://foodxprs.com/packageimages/xprs%20millet.jpeg"
@@ -441,7 +446,7 @@
 
             }
 
-            if (mealpreference == 1) {
+            if (mealpreference == "Xprs Classic") {
 
 
                 var popcorn = document.getElementById("xprs_L")
@@ -465,10 +470,10 @@
                 var popcorn68 = document.getElementById("gh99")
                 popcorn68.innerText = "Rice, 2 Rotis, Dal, Curry, Salad"
 
-
+                localStorage.setItem("total amount","₹1890")
 
             }
-            if (mealpreference == 2) {
+            if (mealpreference == "Xprs Standard") {
 
 
                 var popcorn = document.getElementById("xprs_L")
@@ -492,8 +497,10 @@
                 var popcorn68 = document.getElementById("gh99")
                 popcorn68.innerText = "4 Rotis, Dal, Curry, Salad"
 
+                localStorage.setItem("total amount","₹1890")
+
             }
-            if (mealpreference == 3) {
+            if (mealpreference == "Xprs Fresh") {
 
 
                 var popcorn = document.getElementById("xprs_L")
@@ -517,8 +524,11 @@
 
                 var popcorn68 = document.getElementById("gh99")
                 popcorn68.innerText = "Veg Salad, Fruits"
+
+
+                localStorage.setItem("total amount","₹1890")
             }
-            if (mealpreference == 4) {
+            if (mealpreference == "Xprs Lite") {
 
 
                 var popcorn = document.getElementById("xprs_L")
@@ -543,6 +553,9 @@
 
                 var popcorn68 = document.getElementById("gh99")
                 popcorn68.innerText = "Veg Sandwich, Fruit Juice"
+
+
+                localStorage.setItem("total amount","₹1890")
             }
         }
 
