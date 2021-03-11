@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="https://foodxprs.com/assets/images/favicon.png">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+        <title>Document</title>
+        <link rel="shortcut icon" href="https://foodxprs.com/assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
@@ -14,10 +15,179 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="order-online.css">
+        <style>
+            .top-title3 {
+	
+                /* margin: 50px auto; */
+                color: black;
+                text-align: center;
+               margin-top: 20px;
+               margin-bottom: -30px;
+                max-width: 600px;
+                position: relative;
+                font-family: "Rancho", cursive;
+                font-size: 35px;
+                text-transform: capitalize;
+                
+            }
+            .top-title3:before {
+                content: "";
+                display: block;
+                width: 60px;
+                height: 2px;
+                background: #5c7f36;
+                left: 70%;
+                top: 50%;
+                position: absolute;
+            }
+            .top-title3:after {
+                content: "";
+                display: block;
+                width: 60px;
+                height: 2px;
+                background: #5c7f36;
+                right: 70%;
+                top: 50%;
+                position: absolute;
+            }
+            .content_middle,
+            #list_items {
+                font-size: 20px;
+                color: rgb(70, 64, 64);
+                line-height: 30px;
+                margin-left: 20px;
+            }
+            #list_items {
+                margin-left: 60px;
+            }
+            #customer_data {
+                width: 60%;
+                height: 450px;
+                margin-left: 40px;
+                border: 4px solid rgb(228, 222, 222);
+                margin-top: 20px;
+                display: block;
+              
+                border-radius: 20px;
+
+                /* margin-right: auto; */
+            }
+
+            /* input filed symbol */
+
+            .input-container {
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                width: 400px;
+                margin-bottom: 15px;
+                margin-top: 30px;
+            }
+
+            .icon69:hover {
+                color: rgb(32, 26, 26);
+            }
+            .icon69 {
+                fill: #000;
+                background: #5c7f36;
+            }
+
+            .icon69 {
+                padding: 10px;
+
+                background: rgb(173, 169, 169);
+                color: white;
+                min-width: 50px;
+                text-align: center;
+            }
+
+            .input-field {
+                width: 650px;
+                padding: 10px;
+                outline: none;
+            }
+
+            .input-field:focus {
+                border: 2px solid lightgrey;
+            }
+
+            /* Set a style for the submit button */
+
+            .note {
+                color: grey;
+            }
+            .note2 {
+                color: rgb(29, 28, 28);
+            }
+
+            #button_online {
+                padding: 20px;
+                margin-top: 20px;
+                margin-left: 100px;
+                color: #5c7f36;
+                color: white;
+            }
+            #button_submit {
+                height: 50px;
+                width: 150px;
+                border-radius: 50px;
+                background-color:dodgerblue;
+                color: white;
+                /* margin-left: 100px; */
+            }
+            #button_submit > a {
+                margin: 0 10px;
+                padding-top: 100px;
+                text-decoration: none;
+                font-size: 15px;
+                color: white;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            #button_submit > a:hover {
+                padding-bottom: 10px;
+                border-bottom: 3px solid darkolivegreen;
+                padding-top: 50px;
+            }
+
+            /* Container holding the image and the text */
+            .order_online {
+                width: 100%;
+
+                margin-top: 20px;
+                height: 300px;
+            }
+            .container {
+                position: relative;
+                text-align: center;
+                font-family: "Rancho", cursive;
+                color:orange;
+                font-size: 60px;
+            }
+            /* Centered text */
+            .centered {
+                margin-left: 70px;
+                position: absolute;
+                top: 30%;
+                left: 55%;
+                transform: translate(-50%, -50%);
+            }
+            /* centere bottom content text */
+            .small_data {
+                margin-top: 80px;
+                color: aliceblue;
+                font-size: 30px;
+                position: absolute;
+                top: 50%;
+                left: 55%;
+                transform: translate(-50%, -50%);
+            }
+
+            
+
+        </style>
 	</head>
 	<body>
-        <!-- navigation bar -->
+                <!-- navigation bar -->
     <div>
         <div class="nav_top">
 
@@ -62,40 +232,24 @@
                     alt="">
             </div>
         </header>
-    </div>
+    </div><br><br><br>
 
     <!-- navigation bar -->
-		<div class="container" >
-			<img
-				class="order_online"
-				src="https://images.squarespace-cdn.com/content/v1/518ea9e4e4b0eb1ecff22776/1505338359278-ZR0NGOOVNIMBNDWKECZL/ke17ZwdGBToddI8pDm48kMbbYEFgw4jm354A2z0Ndf4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcy8llUarnDEzHipvAcrJX1qxj3VfHtSN6k1cnz1ezsgbIFwABDbv2KsGrErEkYtGf/ordering+food+online?format=1000w"
-				alt=" "
-			/>
-			<div class="centered">Order Online</div>
-			<p class="small_data">
-				We bring to you the unforgetable moment with our delicious dishes
-			</p>
-		</div>
-		<p class="top-title3">STEP BY STEP PROCEDURE</p>
-		<br /><br />
-		<p class="content_middle">
-			The FoodXprs Lunch Services Pvt Ltd works just like packed food delivered
-			on monthly basis prepared from the wide range of vegetables, pulses,
-			fruits, breads in a combination of four types of lunch boxes.
-		</p>
-        <div id="list_items">
-            <li>Select Your Location</li>
-            <li>Select Your Meal Preference</li>
-            <li>Make Payment</li>
-        </div>
-        <!-- anwar will give code here -->
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-
+    <div class="container" >
+        <img
+            class="order_online"
+            src="https://thumbs.dreamstime.com/b/close-up-woman-ordering-food-online-internet-concept-order-food-close-up-woman-ordering-food-online-internet-concept-order-122655244.jpg"
+            alt=" plan my Meal"
+        />
+        <div class="centered">PLAN MY MEAL</div>
+        <p class="small_data">
+            We bring to you the unforgetable moment with our delicious dishes
+        </p>
+    </div>
+        <p class="top-title3" >Plan My Meal</p>
+		<br />
         <div id="customer_data">
             <form action="/action_page.php" style="max-width: 500px; margin: auto">
-                
                 <div class="input-container" id="resp1">
                     <i class="fa fa-user icon69"></i>
                     <input
@@ -106,6 +260,23 @@
                         id="uname"
                         
                     />
+                </div>
+                
+                <div class="input-container" id="resp4">
+                    <i class="material-icons icon69">&#xe8b0;</i>
+                    <input   class="input-field"   type="date" id="data_order" />
+                </div>
+                <div class="input-container" id="resp3">
+                    <i class="material-icons icon69">&#xe56c;</i>
+                    <select name="Receipe" class="input-field" id="food_type" >
+                        <option value="Select Your Meal Preference">Select Your Meal Preference</option>
+                        <option value="Xprs Millet">Xprs Millet</option>
+                        <option value="Xprs Classic">Xprs Classic</option>
+                        <option value="Xprs Standard">Xprs Standard</option>
+                        <option value="Xprs Fresh">Xprs Fresh</option>
+                        <option value="Xprs Lite">Xprs Lite</option>
+                        
+                    </select>
                 </div>
     
                 <div class="input-container" id="resp2">
@@ -125,42 +296,21 @@
                     
                 </div>
     
-                <div class="input-container" id="resp3">
-                    <i class="material-icons icon69">&#xe56c;</i>
-                    <select name="Receipe" class="input-field" id="food_type" >
-                        <option value="Select Your Meal Preference">Select Your Meal Preference</option>
-                        <option value="Xprs Millet">Xprs Millet</option>
-                        <option value="Xprs Classic">Xprs Classic</option>
-                        <option value="Xprs Standard">Xprs Standard</option>
-                        <option value="Xprs Fresh">Xprs Fresh</option>
-                        <option value="Xprs Lite">Xprs Lite</option>
-                        
-                    </select>
-                </div>
-                <div class="input-container" id="resp4">
-                    <i class="material-icons icon69">&#xe8b0;</i>
-                    <input   class="input-field"   type="date" id="data_order" />
-                </div>
-                <p class="note"><b class="note2">Note:</b> Accept only Online payment</p>
+               
+                
+                <p class="note"><b class="note2">Note:</b>We Accept only Online payment</p>
     
                 
             </form>
             <div id="button_online">
-                <button id="button_submit"><a href=""><span class="online_order12">Submit
+                <button id="button_submit"><a href=""><span class="online_order12">Confirm
                 </span></a></button>
 
             </div>
-            
-            <div id="Accept_food_msg">
+          
 
-            </div>
-            
-              
-
-        </div>
-        <br><br><br><br>
-
-
+        </div> <br><br><br>
+        
         <!--footer-->
     <div class="footer-box">
         <div class="footer">
@@ -270,7 +420,10 @@
         document.querySelector(".nav_icon").addEventListener("click", navber)
 
     </script>
-    <script  type="module" src="order-online.js"></script>
 
-	</body>
+        
+        <script type="module" src="plan-my-order-module.js"></script>
+        
+        
+    </body>
 </html>
