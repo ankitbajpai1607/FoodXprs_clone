@@ -126,7 +126,7 @@
 	text-align: center;
 }
 
-p {
+.top-title {
 	font-family: sans-serif;
 	margin: 50px auto;
 	color: #5c7f36;
@@ -141,7 +141,7 @@ p {
 	width: 60px;
 	height: 2px;
 	background: #5c7f36;
-	left: 67%;
+	left: 78%;
 	top: 50%;
 	position: absolute;
 }
@@ -151,7 +151,7 @@ p {
 	width: 60px;
 	height: 2px;
 	background: #5c7f36;
-	right: 67%;
+	right: 78%;
 	top: 50%;
 	position: absolute;
 }
