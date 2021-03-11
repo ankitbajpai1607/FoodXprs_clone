@@ -87,7 +87,8 @@
             min-width: 50px;
             text-align: center;
         }
-        .icon:hover{
+
+        .icon:hover {
             opacity: 0.8;
         }
     </style>
@@ -159,27 +160,48 @@
             var user = document.getElementById("anwar-user").value
             var pass = document.getElementById("anwar-pass").value
             var Cpass = document.getElementById("anwar-Cpass").value
-            
-
-
-            if(mob.length < 10 || mob.length > 10){
-                alert("Please Enter 10 digit Mobile Number")
-                
-            } 
-
-            localStorage.setItem('name', name)
-            localStorage.setItem('mob', mob)
-            localStorage.setItem('email', email)
-            localStorage.setItem('user', user)
-            localStorage.setItem('pass', pass)
-            localStorage.setItem('Cpass', Cpass)
-
-           
 
 
 
-            
-            
+            if (name.length == 0 || mob.length == 0 || email.length == 0 || user.length == 0 || pass.length == 0 || Cpass.length == 0) {
+                alert("Please fill all the input field")
+                var res = false
+
+            } else {
+                res = true
+                if (res == true) {
+
+                    if (mob.length < 10 || mob.length > 10) {
+                        alert("Invalid Mobile Number")
+                    } else {
+                        alert("Registration Successful")
+                        window.location.href = "login.html"
+
+                        localStorage.setItem('name', name)
+                        localStorage.setItem('mob', mob)
+                        localStorage.setItem('email', email)
+                        localStorage.setItem('user', user)
+                        localStorage.setItem('pass', pass)
+                        localStorage.setItem('Cpass', Cpass)
+                    }
+
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
 
 
