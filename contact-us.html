@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us</title>
+    <link rel="shortcut icon" href="https://foodxprs.com/assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indexNew.css">
+    <title>FoodXprs Lunch Services Pvt Ltd | Hyderabad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #anwar-reg-container {
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 100px;
+            border-style: groove;
+        }
+
+        .anwar-reg-box {
+            width: 90%;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .anwar-reg-box>div {
+            padding: 20px;
+
+            border: grey;
+
+
+        }
+
+        .anwar-reg-box input {
+            width: 90%;
+            padding: 10px;
+            outline: none;
+            background-color: rgb(238, 238, 238);
+            border: none;
+            border-left: 1px solid gray;
+
+
+        }
+
+        .anwar-reg-box>h2 {
+
+            margin: auto;
+            font-size: 30px;
+        }
+
+        .anwar-reg-btn {
+            padding: 10px;
+            width: 200px;
+            color: white;
+            background-color: #658F39;
+            border-radius: 100px;
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        .anwar-reg-btn:hover {
+            background-color: rgb(68, 97, 10);
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .background-img {
+            background-image: url('https://cdn.pixabay.com/photo/2016/12/09/11/33/smartphone-1894723_960_720.jpg');
+            height: 200px;
+            width: 100%;
+
+        }
+
+        .reg-page-heading {
+            width: 20%;
+            margin: auto;
+            padding: 80px;
+            font-size: 40px;
+            color: #658F39;
+        }
+
+        .icon74 {
+            padding: 10px;
+            margin-right: -5px;
+            background: #658F39;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .icon74:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <div>
+        <div class="nav_top">
+
+            <div class="rtext"><a href="#"><i class="fa fa-envelope icon"></i></a><span> </span> order@foodxprs.com
+            </div>
+            <div class="ltext"><a href="#"><i class="fa fa-phone icon"></i></a><span> </span> +919966773320</div>
+            <div></div>
+            <div class="rtext"><a href="#"><i class="fa fa-facebook icon top_img"></i> </a></div>
+            <div class="ltext"><a href="#"><i class="fa fa-twitter icon top_img"></i></a></div>
+            <div class="ltext"><a href="#"><i class="fa fa-pinterest icon top_img"></i></a></div>
+            <div class="ltext"><a href="#"><i class="fa fa-instagram icon top_img"></i></a></div>
+            <div class="ltext"><a href="#"><i class="fa fa-linkedin icon top_img"></i></a></div>
+            <div class="ltext">
+                <div
+                    style="height: 15px; border-left: 1px solid white;border-right: 1px solid white; text-align: center;">
+                    <a href="register.html"><i class="fa fa-user icon top_img"></i></a><span> </span> Register
+                </div>
+            </div>
+            <div class="ltext"><a href="login.html"><i class="fa fa-user icon top_img"></i></a><span> </span>Login</div>
+
+
+        </div>
+    </div>
+    <div id="header">
+
+
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="https://foodxprs.com/assets/images/food-xprs.png" class="lozad2"
+                        alt="Food Xprs"></a>
+            </div>
+            <nav class="nav_bar">
+                <a href="index.html">HOME </a>
+                <a href="about.php.html">ABOUT US</a>
+                <a href="why-us.php.html">WHY US</a>
+                <a href="packaging-part.html">PACKAGES</a>
+                <a href="order-online.html">ORDER ONLINE</a>
+                <a href="contact-us.html">CONTACT US</a>
+            </nav>
+            <div class="nav_icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADPz89LS0uWlpb39/eCgoKQkJCxsbH29vZiYmI4ODh0dHTX19empqbFxcXr6+sQEBDh4eEbGxu7u7s0NDR6enpXV1egoKDJyclvb28ODg6IiIhcXFwfHx8ZGRnwNjATAAACZUlEQVR4nO3dCW7CMBCFYRdIw75vbSm9/y2rqKgUVRo72NJoxv93gveUkGBj7BAAAAAAAAAAAAAAAAAAoAKrdjq0Y9qu+tVbH1/sOa7TC7baYZ/UJvZrZtpJnzZrkgputHNm2KRUPGinzHKIF3zVzpjpNVZwq50w2zbScKodMNtULjjRzlfARGw41o5XwFhsONeOV8BcbGj3ZX83Extqpyui8oY77XQFXMWGJ+14BZzEhlbHTX/JY6iBdrwCFmJDD48auWBYaufLtow0NP803cUKhoV2xEyRT6H9+zR6j3bO2ikznFMKhrDSzvm05GnhxuYgap40l3izHlmbcpuNekx53y7kdmDHts/lAwAAAAAAAAAAxjRvy5Edy7e+P1zsh9q/JfU23PfoN7hqx33KdZBa0O5i9ugy9h+f2jkzfKYUfNdOmeU9XtD6Sm95lXfwsFhfXqofwkU7YLZLpKF2vgLkgnYXC93Jy4bsvgrv5JeivS9r/w3Fhh/a8QrYiA210xVR+TX0/zn0/yz1/z708KiRC1bwvdT+2CI6JeV+fFjBGL+CeRrLT5vEubYK5kuD/znvjvffLQAAAAAAAAAAgCHO94myt9fXoddeXxOj+7XFFkD/srtsKHHPPff7Jrrf+9L//qVf2hEzRfegtX2PdmL3qXa+AuSC/vfz9r8nu/999a3v5t2Rn6ba6YqovKH/c2ZsDpseyWcFWV/l3ZFXettfqh/9I7D7c9cqODvP/H+7EhazW5tke5RwhmVoLI+Bk84h9X+WbLA7hko9DzhUcKZzx/m53AAAAAAAAAAAAAAAAABg0zfn21Nf0tdOJAAAAABJRU5ErkJggg=="
+                    alt="">
+            </div>
+        </header>
+    </div>
+
+    <!-- navigation bar -->
+
+
+    <div class="background-img">
+        <h1 class="reg-page-heading">CONTACT US</h1>
+
+    </div>
+
+
+
+
+
+
+
+
+
+   
+
+
+        <h2
+            style="text-align: center; margin: 100px 0px 0px 0px; font-size: 30px; text-decoration: underline; color: #658F39;">
+            Contact Form</h2>
+
+
+        <div id="anwar-reg-container">
+
+
+
+
+            <form class="anwar-reg-box">
+
+                <div>
+                    <i class="fa fa-user icon74"></i>
+                    <input type="text" required="required" id="anwar-name" placeholder="Enter Your Name">
+                </div>
+                <div>
+                    <i class="fa fa-phone icon74"></i>
+                    <input type="tel" required="required" id="anwar-mob" placeholder="Enter Your Mob No">
+                </div>
+                <div>
+                    <i class="fa fa-envelope icon74"></i>
+                    <input type="email" required="required" id="anwar-email" placeholder="Enter Your Email">
+                </div>
+                <div>
+                    <i class="fa fa-envelope icon74"></i>
+                    <input type="text" required="required" id="anwar-add" placeholder="Message">
+                </div>
+            </form>
+            <div style="text-align: center; "><button class="anwar-reg-btn" onclick="contact()">SUBMIT</button></div>
+        </div>
+
+
+
+
+
+
+
+
+    
+
+
+    <!--footer-->
+    <div class="footer-box">
+        <div class="footer">
+            <div id="f_about" class="f_box">
+                <div>
+                    <h3>ABOUT US</h3>
+                </div>
+                <div>
+                    <p>FoodXprs Lunch Services Pvt Ltd provides Lunch box Services to meet the healthy lunch
+                        requirements of employees and professionals who are unable to prepare it themselves lunch due to
+                        hectic mornings.</p>
+                </div>
+                <div>
+                    <div><i class="fa fa-facebook iconb top_img"></i></div>
+                    <div><i class="fa fa-twitter iconb top_img"></i></div>
+                    <div><i class="fa fa-pinterest iconb top_img"></i></div>
+                    <div><i class="fa fa-instagram iconb top_img"></i></div>
+                    <div><i class="fa fa-linkedin iconb top_img"></i></div>
+                </div>
+            </div>
+            <div id="f_imp" class="f_box">
+                <div>
+                    <h3>IMPORTANT LINK</h3>
+                </div>
+                <div>
+                    <ul>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>How Healthy Is Your Lifestyle </li>
+                    </ul>
+                </div>
+                <div><img src="https://foodxprs.com/assets/images/fssai.png" alt="fssai"></div>
+                <p>Lic No: 13619013001552</p>
+                <div>
+                    <div><a href="https://play.google.com/store/apps/details?id=com.foodxprs&hl=en"></a><img
+                            src="https://foodxprs.com/assets/images/play-store.png" alt="play-store"></div>
+                    <div><a href="https://apps.apple.com/us/app/foodxprs/id1484597519?ls=1"></a><img
+                            src="https://foodxprs.com/assets/images/app-store.png" alt="app-store"></div>
+                </div>
+            </div>
+
+            <div id="f_location" class="f_box">
+                <div>
+                    <h3>LOCATE US</h3>
+                </div>
+                <div class="map"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15225.955834271379!2d78.412183!3d17.436296!3m2!1i1024!2i768!4f13.1!2m1!1s8-2-293%2F82%2FB%2F49%2C%20Gayatri%20Hills%2C%20Jubilee%20Hills%20Road%20No%2010C%2C%20Hyderabad-500033!5e0!3m2!1sen!2sin!4v1615377627901!5m2!1sen!2sin"
+                        width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            </div>
+            <div id="f_contact" class="f_box">
+                <div>
+                    <h3>CONTACT DETAILS</h3>
+                </div>
+                <div style="margin-bottom: 0px; font-weight: bold;">
+                    <p>ADDRESS</p>
+                </div>
+                <div>
+                    <div>
+                        <div><i class="fa fa-map-marker icon"></i></div>
+                        <div><span>FOODXPRS LUNCH SERVICES PVT LTD, 8-2-293/82/B/48, Gayathri Hills, Jubilee Hills Road
+                                No 10C, Hyderabad-500033</span></div>
+                    </div>
+                    <div></div>
+                    <div>
+                        <div><i class="fa fa-envelope icon"></i></div>
+                        <div><span>order@foodxprs.com</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+
+
+
+
+
+    <script>
+
+        function sticky() {
+            var head = document.querySelector("#header");
+            head.setAttribute("class", "sticky")
+
+        }
+        var cnt = 0;
+        function navber() {
+            var nav = document.querySelector("#n_bar")
+            var mobile = document.querySelector(".mobile_nav")
+
+
+            if (cnt % 2 == 0) {
+                nav.style.display = "none"
+                mobile.style.display = "none"
+
+            } else {
+                nav.style.display = "flex"
+                mobile.style.display = "block"
+
+            }
+            cnt++;
+            console.log(nav)
+        }
+
+
+        window.addEventListener("scroll", sticky)
+
+        document.querySelector(".nav_icon").addEventListener("click", navber)
+
+    </script>
+
+    <script>
+        function contact() {
+            var name = document.getElementById("anwar-name").value
+            var mob = document.getElementById("anwar-mob").value
+            var email = document.getElementById("anwar-email").value
+            var message = document.getElementById("anwar-add").value
+            
+
+
+
+
+            if (name.length == 0 || mob.length == 0 || email.length == 0 || message.length == 0 ) {
+                alert("Please fill all the input field")
+                var res = false
+
+            } else {
+                res = true
+                if (res == true) {
+
+                    if (mob.length < 10 || mob.length > 10) {
+                        alert("Invalid Mobile Number")
+                    } else {
+                        alert("Form Submitted Successfully")
+                        window.location.href = "index.html"
+
+                        localStorage.setItem('name', name)
+                        localStorage.setItem('mob', mob)
+                        localStorage.setItem('email', email)
+                        localStorage.setItem('message', message)
+                        
+
+                    }
+
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
