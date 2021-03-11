@@ -87,7 +87,8 @@
             min-width: 50px;
             text-align: center;
         }
-        .icon:hover{
+
+        .icon:hover {
             opacity: 0.8;
         }
     </style>
@@ -148,11 +149,12 @@
 
             //console.log(user2,pass2,user,pass)
 
-            if (user == user2) {
-                console.log(user == user2)
-                if (pass == pass2) {
-                    console.log(pass == pass2)
-                    window.location.href = "home-about.html";
+            if (user == user2 && pass == pass2) {
+                alert("Login Successful")
+                window.location.href = "home-about.html";
+                {
+
+
                 }
             } else {
                 alert("Invalid Username or Password")
