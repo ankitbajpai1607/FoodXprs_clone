@@ -27,6 +27,9 @@ function Getdata(e) {
 		var select_location = (document.getElementById("location1").value = "");
 		var select_food = (document.getElementById("food_type").value = "");
 		var date_delivery = (document.getElementById("data_order").value = "");
+
+
+		location.href =  "file:///C:/Users/Pratiksha/project-2-FoodXprs_clone/packaging-part.html"
 	}
 }
 
