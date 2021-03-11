@@ -836,6 +836,14 @@ border: 1px solid;
 .icon21{    
     font-size: 60px;
 }
+.small_num{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #3F3E44;
+    background-color: #fff;
+    font-size: 15px;
+}
 
 
 
