@@ -207,3 +207,69 @@
 	margin-top: 20px;
 	font-size: 15px;
 }
+
+/* Container holding the image and the text */
+.order_online4580 {
+	width: 100%;
+	margin-top: -40px;
+	height: 300px;
+}
+/* Container holding the image and the text */
+.container4560 {
+	position: relative;
+	text-align: center;
+	color: orangered;
+	font-size: 60px;
+}
+/* Centered text */
+.centered4600 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-family: "Rancho", cursive;
+	text-transform: uppercase;
+	margin-top: -90px;
+}
+/* centere bottom content text */
+.small_data4570 {
+	margin-top: 20px;
+	color: aliceblue;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	font-family: "Hind Siliguri", sans-serif;
+	box-sizing: border-box;
+	color: #ffffffeb;
+	font-size: 26px;
+	opacity: 1;
+}
+.kokate900 {
+	font-size: 20px;
+}
+.kokate900:before {
+	content: "";
+	display: block;
+	width: 150px;
+	height: 2px;
+	background: white;
+	left: 57%;
+	top: 50%;
+	position: absolute;
+	margin-top: 55px;
+}
+.kokate900:after {
+	content: "";
+	display: block;
+	width: 150px;
+	height: 2px;
+	background: white;
+	right: 57%;
+	top: 50%;
+	position: absolute;
+	margin-top: 55px;
+}
