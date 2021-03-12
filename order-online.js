@@ -37,6 +37,7 @@ function Getdata(e) {
 		document.getElementById("Accept_food_msg").innerHTML =
 			`Thank You! for Your Order` + `<p>&#128522</p>`;
 
+
 		// cust_name = document.getElementById("uname").value = "";
 		// select_location = document.getElementById("location1").value = "";
 		// select_food = document.getElementById("food_type").value = "";
