@@ -631,6 +631,51 @@ border: 1px solid;
     height: 50px;
     border-radius: 50%;
 }
+.animatedzoomIn {
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 400;
+    line-height: 1.714;
+    box-sizing: border-box;
+    color: #337ab7;
+    text-decoration: none;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: zoomIn;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 40px;
+    right: 1.5%;
+    z-index: 9999;
+    background: #5c7f36;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    height: 53px;
+    width: 53px;
+    text-align: center;
+    transition: all 0.2s linear;
+    display: inline;
+
+}
+
+.fa-fa-angle-double-up {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 20px;
+    transition: all 0.2s ease;
+
+}
 
 
 /* <page2nilcsss></page2nilcsss> */
@@ -638,20 +683,20 @@ border: 1px solid;
 /*nil css-----------------------------------------*/
 
 
-/*Anwar css-----------------------------------------*/
+/*jonsnow css-----------------------------------------*/
 
-#anwar-edit-nil32 {
+#jonsnow-edit-nil32 {
     margin-top: 10px;
 
 }
 
-#anwar-edit-nil33 {
+#jonsnow-edit-nil33 {
     width: 30%;
     margin-left: 140px;
 
 }
 
-.anwar-edit-nil34 {
+.jonsnow-edit-nil34 {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     font-size: 14px;
@@ -708,14 +753,14 @@ border: 1px solid;
     position: absolute;
 }
 
-#anwar-edit-nil90 {
+#jonsnow-edit-nil90 {
     width: 50%;
     margin-left: 60%;
     margin-top: 70px;
 
 }
 
-.anwar-edit-nil-p1 {
+.jonsnow-edit-nil-p1 {
 
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -730,7 +775,7 @@ border: 1px solid;
     margin-bottom: 15px;
 }
 
-.anwar-edit-nil-p123 {
+.jonsnow-edit-nil-p123 {
 
     font-size: 16px;
     font-family: 'Hind Siliguri', sans-serif;
@@ -745,13 +790,13 @@ border: 1px solid;
 
 }
 
-.nil-anwar-edit-anchor {
+.nil-jonsnow-edit-anchor {
     color: #616f7d;
     font-weight: bold;
     font-size: 16px;
 }
 
-#anwar-edit-nil388 {
+#jonsnow-edit-nil388 {
     width: 55%;
     margin-left: 52%;
     margin-top: -520px;
@@ -760,17 +805,17 @@ border: 1px solid;
 
 }
 
-.anwar-edit-nil34:hover {
+.jonsnow-edit-nil34:hover {
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     transform: scale(1.1);
 }
 
 
-#anwar-service-heading {
+#jonsnow-service-heading {
     text-align: center;
 }
-#anwar-service-heading>p{
+#jonsnow-service-heading>p{
     font-family: sans-serif;
     margin: 50px auto;
     color: #5C7F36;
@@ -779,7 +824,7 @@ border: 1px solid;
     max-width: 600px;
     position: relative;
 }
-#anwar-service-heading>p:before {
+#jonsnow-service-heading>p:before {
     content: "";
     display: block;
     width: 60px;
@@ -789,7 +834,7 @@ border: 1px solid;
     top: 50%;
     position: absolute;
 }
-#anwar-service-heading>p:after {
+#jonsnow-service-heading>p:after {
     content: "";
     display: block;
     width: 60px;
@@ -799,23 +844,23 @@ border: 1px solid;
     top: 50%;
     position: absolute;
 }
-#anwar-service-heading>h1{
+#jonsnow-service-heading>h1{
     font-family: "Rancho", cursive;
 }
 
-#anwar-service-sec {
+#jonsnow-service-sec {
     width: 1200px;
     display: flex;
     margin: auto;
     padding: 10px;
 }
 
-.anwar-icon-title>h2 {
+.jonsnow-icon-title>h2 {
     font-family: "Rancho", cursive;
     text-align: center;
 }
 
-.anwar-icon-img {
+.jonsnow-icon-img {
     width: 120px;
     height: 120px;
     border: 2px dotted #5c7f36;
@@ -827,7 +872,7 @@ border: 1px solid;
 }
 .imgicon21{
     margin: auto;
-    margin-top: 30px;
+    margin-top: -15px;
     width: 60px;
     height: 60px;
     
@@ -843,16 +888,25 @@ border: 1px solid;
     color: #3F3E44;
     background-color: #fff;
     font-size: 15px;
+    margin-left: 95px;
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 5px;
+    border: 1px solid seashell;
+}
+.jonsnow-icon-img:hover .small_num{
+    background-color:#5c7f36 ;
+    color :#fff;
 }
 
 
 
 
-.anwar-icon-desc {
+.jonsnow-icon-desc {
     text-align: center;
 }
-.anwar-icon-img:hover{
-    background-color: black;
+.jonsnow-icon-img:hover{
+    background-color: #5c7f36;
     color :#fff;
 }
 
