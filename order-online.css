@@ -270,16 +270,17 @@
 }
 
 /* anwar part in home page */
-#anwar-edit-nil32 {
+
+#jonsnow-edit-nil32 {
 	margin-top: 10px;
 }
 
-#anwar-edit-nil33 {
+#jonsnow-edit-nil33 {
 	width: 30%;
 	margin-left: 140px;
 }
 
-.anwar-edit-nil34 {
+.jonsnow-edit-nil34 {
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	font-size: 14px;
@@ -332,13 +333,13 @@
 	position: absolute;
 }
 
-#anwar-edit-nil90 {
+#jonsnow-edit-nil90 {
 	width: 50%;
 	margin-left: 60%;
 	margin-top: 70px;
 }
 
-.anwar-edit-nil-p1 {
+.jonsnow-edit-nil-p1 {
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	font-family: "Hind Siliguri", sans-serif;
@@ -352,7 +353,7 @@
 	margin-bottom: 15px;
 }
 
-.anwar-edit-nil-p123 {
+.jonsnow-edit-nil-p123 {
 	font-size: 16px;
 	font-family: "Hind Siliguri", sans-serif;
 	font-weight: 400;
@@ -365,28 +366,28 @@
 	font-size: 17px;
 }
 
-.nil-anwar-edit-anchor {
+.nil-jonsnow-edit-anchor {
 	color: #616f7d;
 	font-weight: bold;
 	font-size: 16px;
 }
 
-#anwar-edit-nil388 {
+#jonsnow-edit-nil388 {
 	width: 55%;
 	margin-left: 52%;
 	margin-top: -520px;
 }
 
-.anwar-edit-nil34:hover {
+.jonsnow-edit-nil34:hover {
 	-ms-transform: scale(1.5);
 	-webkit-transform: scale(1.5);
 	transform: scale(1.1);
 }
 
-#anwar-service-heading {
+#jonsnow-service-heading {
 	text-align: center;
 }
-#anwar-service-heading > p {
+#jonsnow-service-heading > p {
 	font-family: sans-serif;
 	margin: 50px auto;
 	color: #5c7f36;
@@ -395,7 +396,7 @@
 	max-width: 600px;
 	position: relative;
 }
-#anwar-service-heading > p:before {
+#jonsnow-service-heading > p:before {
 	content: "";
 	display: block;
 	width: 60px;
@@ -405,7 +406,7 @@
 	top: 50%;
 	position: absolute;
 }
-#anwar-service-heading > p:after {
+#jonsnow-service-heading > p:after {
 	content: "";
 	display: block;
 	width: 60px;
@@ -415,25 +416,24 @@
 	top: 50%;
 	position: absolute;
 }
-#anwar-service-heading > h1 {
+#jonsnow-service-heading > h1 {
 	font-family: "Rancho", cursive;
 }
 
-#anwar-service-sec {
+#jonsnow-service-sec {
 	width: 1200px;
 	display: flex;
 	margin: auto;
 	padding: 10px;
 }
 
-.anwar-icon-title > h2 {
+.jonsnow-icon-title > h2 {
 	font-family: "Rancho", cursive;
 	text-align: center;
-
 	margin: 60px;
 }
 
-.anwar-icon-img {
+.jonsnow-icon-img {
 	width: 120px;
 	height: 120px;
 	border: 2px dotted #5c7f36;
@@ -445,7 +445,7 @@
 }
 .imgicon21 {
 	margin: auto;
-	/* margin-top:5px; */
+	margin-top: -15px;
 	width: 60px;
 	height: 60px;
 }
@@ -459,16 +459,23 @@
 	color: #3f3e44;
 	background-color: #fff;
 	font-size: 15px;
-}
-
-.anwar-icon-desc {
+	margin-left: 95px;
+	margin-top: 5px;
 	text-align: center;
+	padding-top: 5px;
+	border: 1px solid seashell;
 }
-.anwar-icon-img:hover {
-	background-image: url("https://www.therecipetown.com/wp-content/uploads/2014/01/Vegetable-Pulao.png");
-
-	/* background-color: black; */
+.jonsnow-icon-img:hover .small_num {
+	background-color: #5c7f36;
 	color: #fff;
 }
 
-/* anwar part in home page */
+.jonsnow-icon-desc {
+	text-align: center;
+}
+.jonsnow-icon-img:hover {
+	background-color: #5c7f36;
+	color: #fff;
+}
+
+/*Anwar css-----------------------------------------*/
