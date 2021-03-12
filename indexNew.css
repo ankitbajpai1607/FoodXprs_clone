@@ -94,7 +94,7 @@ header{
     padding-top: 50px;
 }
 
-.sticky {
+/* .sticky {
     background-color: white;
     
    transition: all 1s ease;
@@ -104,8 +104,16 @@ header{
    left: 0;
    box-shadow: 0px 1px 10px #656565;
    z-index: 5;
- }
+ } */
+ #header{
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 1px 10px #656565;
 
+}
 
   /* <!-- footer part --> */
 

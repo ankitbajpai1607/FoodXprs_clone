@@ -244,11 +244,49 @@ li :hover{
 }
 .jon_box{
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-color: #fff;
+    padding-top: -10px;
+    padding-bottom: 25px;
 }
 .jon_box>div{
     float: left;
+}
+.jon_box>div:nth-child(1){
+    margin-left: 15px;
+    margin-top: -5px;
+    width: 200px;
+    height: 200px;
+    
+}
+.jon_box>div:nth-child(1)>img{
+    
+    width: 230px;
+    height: 198px;
+    
+    
+}
+
+.jon_box>div:nth-child(2){
+    margin-left: 250px;
+    
+}
+.jon_box>div:nth-child(3){
+    margin-left: 250px;
+    padding-top: 65px;
+    
+}
+.jon_box>div>h3{
+    font-family:"Rancho", cursive; 
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.jon_box>div>p{
+    margin-top: 0px;
+    font-size: 14px;
+    color: #616F7D;
+
+    
 }
 
 
@@ -591,6 +629,7 @@ border: 1px solid;
 .wssp_img {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
 }
 
 
@@ -601,48 +640,167 @@ border: 1px solid;
 
 /*Anwar css-----------------------------------------*/
 
-#anwar-about-sec {
-    display: flex;
-    width: 1180px;
-    margin: auto;
-}
-
-#anwar-about-img {
-    width: 500px;
+#anwar-edit-nil32 {
+    margin-top: 10px;
 
 }
 
-#anwar-about-img>img {
-    max-width: 500px;
-}
-
-#anwar-about-text {
-    width: 600px;
-    font-size: 12px;
-}
-
-#anwar-about-text>h2 {
-    text-align: center;
+#anwar-edit-nil33 {
+    width: 30%;
+    margin-left: 140px;
 
 }
 
-#anwar-about-text>#para1 {
-    color: black;
+.anwar-edit-nil34 {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 400;
+    line-height: 1.714;
+    color: #616f7d;
+    max-width: 130%;
+    height: auto;
+    visibility: visible;
+    animation-name: zoomIn;
+    border-radius: 30px;
+}
+
+.top-title2345 {
+
     font-size: 16px;
-    font-weight: bold;
-    line-height: 20px;
+    position: relative;
+    display: block;
+    text-align: center;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
+    color: #5c7f36;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 20px;
+    margin-right: 500px;
+
+
 }
 
-#anwar-about-text>#para2 {
-    font-size: 17px;
-    color: rgb(148, 148, 148);
-    font-weight: normal;
-    text-align: justify;
-    line-height: 20px;
+
+.top-title2345:before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #5c7f36;
+    left: 77%;
+    top: 50%;
+    position: absolute;
 }
+
+.top-title2345:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #5c7f36;
+    right: 77%;
+    top: 50%;
+    position: absolute;
+}
+
+#anwar-edit-nil90 {
+    width: 50%;
+    margin-left: 60%;
+    margin-top: 70px;
+
+}
+
+.anwar-edit-nil-p1 {
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: 'Hind Siliguri', sans-serif;
+    line-height: 1.714;
+    box-sizing: border-box;
+
+    text-align: justify;
+    font-weight: 700;
+    font-size: 16px;
+    color: #29272e;
+    margin-bottom: 15px;
+}
+
+.anwar-edit-nil-p123 {
+
+    font-size: 16px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 400;
+    line-height: 1.714;
+    box-sizing: border-box;
+    margin: 0 0 10px;
+    text-align: justify;
+    margin-bottom: 20px !important;
+    color: #616f7d;
+    font-size: 17px;
+
+}
+
+.nil-anwar-edit-anchor {
+    color: #616f7d;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#anwar-edit-nil388 {
+    width: 55%;
+    margin-left: 52%;
+    margin-top: -520px;
+
+
+
+}
+
+.anwar-edit-nil34:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+}
+
 
 #anwar-service-heading {
     text-align: center;
+}
+#anwar-service-heading>p{
+    font-family: sans-serif;
+    margin: 50px auto;
+    color: #5C7F36;
+    text-align: center;
+    font-size: 30px;
+    max-width: 600px;
+    position: relative;
+}
+#anwar-service-heading>p:before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #5C7F36;
+    left: 70%;
+    top: 50%;
+    position: absolute;
+}
+#anwar-service-heading>p:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #5C7F36;
+    right: 70%;
+    top: 50%;
+    position: absolute;
+}
+#anwar-service-heading>h1{
+    font-family: "Rancho", cursive;
 }
 
 #anwar-service-sec {
@@ -653,19 +811,52 @@ border: 1px solid;
 }
 
 .anwar-icon-title>h2 {
+    font-family: "Rancho", cursive;
     text-align: center;
 }
 
 .anwar-icon-img {
+    width: 120px;
+    height: 120px;
+    border: 2px dotted #5c7f36;
     text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #5c7f36 ;
 }
+.imgicon21{
+    margin: auto;
+    margin-top: 30px;
+    width: 60px;
+    height: 60px;
+    
+
+}
+.icon21{    
+    font-size: 60px;
+}
+.small_num{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #3F3E44;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+
+
 
 .anwar-icon-desc {
     text-align: center;
 }
-.anwar-icon-img > img:hover {
-    transform: scale(1.5)
+.anwar-icon-img:hover{
+    background-color: black;
+    color :#fff;
 }
+
+
 
 /*Anwar css-----------------------------------------*/
 
