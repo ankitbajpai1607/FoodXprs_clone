@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+
 		<link
 			rel="shortcut icon"
 			href="https://foodxprs.com/assets/images/favicon.png"
@@ -18,7 +18,8 @@
 			href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="indexNew.css" />
+		<link rel="stylesheet" href="index.css" />
+
 		<title>Tasty and Healthy monthly Packages | FoodXprs</title>
 		<link rel="stylesheet" href="./packaging-part.css" />
 	</head>
@@ -104,7 +105,8 @@
 					/>
 				</div>
 			</header>
-		</div><br>
+		</div>
+		<br />
 
 		<!-- navigation bar -->
 		<div class="container4560">
@@ -240,13 +242,32 @@
 		</div>
 		<br /><br /><br /><br />
 
+		<!-- <uhuhounoiipjipkl></uhuhounoiipjipkl> -->
+
+		<div id="whatsapp-btn8991">
+			<a href="https://api.whatsapp.com/send?phone=919966773320" target="_blank"
+				><img
+					src="https://i2.wp.com/lawcorner.in/wp-content/uploads/2020/02/2018_social_media_popular_app_logo-whatsapp-512.png?fit=512%2C512&ssl=1"
+					class="wssp_img8962"
+			/></a>
+		</div>
+
+		<!--=================================== up arrow============================ -->
+
+		<a id="totop" href="#" class="animatedzoomIn" style="display: inline"
+			><i class="fa-fa-angle-double-up">↑</i></a
+		>
+
+		<!--=================================== up arrow============================ -->
+
+		<!---nil part-2 -->
+
 		<!--footer-->
+
 		<div class="footer-box">
 			<div class="footer">
 				<div id="f_about" class="f_box">
-					<div>
-						<h3>ABOUT US</h3>
-					</div>
+					<div><h3>ABOUT US</h3></div>
 					<div>
 						<p>
 							FoodXprs Lunch Services Pvt Ltd provides Lunch box Services to
@@ -264,14 +285,24 @@
 					</div>
 				</div>
 				<div id="f_imp" class="f_box">
-					<div>
-						<h3>IMPORTANT LINK</h3>
-					</div>
+					<div><h3>IMPORTANT LINK</h3></div>
 					<div>
 						<ul>
-							<li>Terms & Conditions</li>
-							<li>Privacy Policy</li>
-							<li>How Healthy Is Your Lifestyle</li>
+							<li>
+								<a href="#"
+									><span style="color: #fff">Terms & Conditions</span>
+								</a>
+							</li>
+							<li>
+								<a href="#"><span style="color: #fff">Privacy Policy</span> </a>
+							</li>
+							<li>
+								<a href="#"
+									><span style="color: #fff"
+										>How Healthy Is Your Lifestyle</span
+									>
+								</a>
+							</li>
 						</ul>
 					</div>
 					<div>
@@ -304,9 +335,7 @@
 				</div>
 
 				<div id="f_location" class="f_box">
-					<div>
-						<h3>LOCATE US</h3>
-					</div>
+					<div><h3>LOCATE US</h3></div>
 					<div class="map">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15225.955834271379!2d78.412183!3d17.436296!3m2!1i1024!2i768!4f13.1!2m1!1s8-2-293%2F82%2FB%2F49%2C%20Gayatri%20Hills%2C%20Jubilee%20Hills%20Road%20No%2010C%2C%20Hyderabad-500033!5e0!3m2!1sen!2sin!4v1615377627901!5m2!1sen!2sin"
@@ -319,9 +348,7 @@
 					</div>
 				</div>
 				<div id="f_contact" class="f_box">
-					<div>
-						<h3>CONTACT DETAILS</h3>
-					</div>
+					<div><h3>CONTACT DETAILS</h3></div>
 					<div style="margin-bottom: 0px; font-weight: bold">
 						<p>ADDRESS</p>
 					</div>
@@ -344,12 +371,15 @@
 				</div>
 			</div>
 		</div>
-		<!--footer-->
 
+		<!--footer-->
 		<script>
 			function sticky() {
 				var head = document.querySelector("#header");
-				head.setAttribute("class", "sticky");
+				head.classList.add("sticky");
+				if (scrollY < 100) {
+					head.classList.remove("sticky");
+				}
 			}
 			var cnt = 0;
 			function navber() {
