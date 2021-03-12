@@ -4,6 +4,7 @@ var select_food;
 var date_delivery;
 var object;
 function Getdata(e) {
+
 	// e.preventDefault();
 
 	// var local_data2 = localStorage.getItem("user_data2");
@@ -52,6 +53,7 @@ function Getdata(e) {
 
 			window.location.href = "plan-my-meal.html";
 		}
+
 	}
 }
 document.getElementById("button_submit").addEventListener("click", Getdata);
