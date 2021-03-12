@@ -394,6 +394,76 @@
 
     document.querySelector(".nav_icon").addEventListener("click",navber)
 </script>
+<script>
+
+    //var Arr = []
+    function contact() {
+        var name = document.getElementById("anwar-name").value
+        var mob = document.getElementById("anwar-mob").value
+        var email = document.getElementById("anwar-email").value
+        var message = document.getElementById("anwar-add").value
+        
+
+
+
+
+        if (name.length == 0 || mob.length == 0 || email.length == 0 || message.length == 0 ) {
+            alert("Please fill all the input field")
+            var res = false
+
+        } else {
+            res = true
+            if (res == true) {
+
+                if (mob.length < 10 || mob.length > 10) {
+                    alert("Invalid Mobile Number")
+                } else {
+                    alert("Form Submitted Successfully")
+                    window.location.href = "index.html"
+
+                    localStorage.setItem('name', name)
+                    localStorage.setItem('mob', mob)
+                    localStorage.setItem('email', email)
+                    localStorage.setItem('message', message)
+
+                    // var obj = {
+                    //     name:name,
+                    //     mob:mob,
+                    //     email:email,
+                    //     message:message
+                    // }
+
+                    // obj = JSON.stringify(obj)
+                    // // Arr.push(obj)
+                    
+                    // localStorage.setItem("data",obj)
+                }
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+</script>
 
 
 
