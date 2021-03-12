@@ -36,22 +36,14 @@ function Getdata(e) {
 		localStorage.setItem("Date", date_delivery);
 		document.getElementById("Accept_food_msg").innerHTML =
 			`Thank You! for Your Order` + `<p>&#128522</p>`;
-<<<<<<< HEAD
-
-		var cust_name = (document.getElementById("uname").value = "");
-		var select_location = (document.getElementById("location1").value = "");
-		var select_food = (document.getElementById("food_type").value = "");
-		var date_delivery = (document.getElementById("data_order").value = "");
 
 
-		location.href =  "file:///C:/Users/Pratiksha/project-2-FoodXprs_clone/packaging-part.html"
-=======
 		// cust_name = document.getElementById("uname").value = "";
 		// select_location = document.getElementById("location1").value = "";
 		// select_food = document.getElementById("food_type").value = "";
 		// date_delivery = document.getElementById("data_order").value = "";
 		window.location.href = "plan-my-meal.html"
->>>>>>> 2b3896aa8bfe349b54792e6f18b66afe026f8764
+
 	}
 }
 document.getElementById("button_submit").addEventListener("click", Getdata);

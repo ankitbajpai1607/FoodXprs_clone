@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="https://foodxprs.com/assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indexNew.css">
+    <title>Food Express - Order Waiting</title>
 
 
     <style>
@@ -13,8 +18,6 @@
             background-color: black;
             height: 100%;
             width: 100%;
-
-
 
         }
 
@@ -141,8 +144,64 @@
             width: 400px;
             text-align: center;
             background-color: whitesmoke;
+            margin-top: -50px;
         }
-   
+
+        #timer45 {
+            color: red;
+            margin-left: 200px;
+            border: 1px solid green;
+            width: 200px;
+            text-align: center;
+            background-color: whitesmoke;
+
+        }
+
+        .animatedzoomInnil21 {
+
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            font-size: 14px;
+            font-family: 'Hind Siliguri', sans-serif;
+            font-weight: 400;
+            line-height: 1.714;
+            box-sizing: border-box;
+            color: #337ab7;
+            text-decoration: none;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: zoomIn;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+            position: fixed;
+            bottom: 40px;
+            right: 1.5%;
+            z-index: 9999;
+            background: #5c7f36;
+            border: 3px solid #ffffff;
+            border-radius: 50%;
+            height: 53px;
+            width: 53px;
+            text-align: center;
+            transition: all 0.2s linear;
+            display: inline;
+
+        }
+
+        .fa-fa-angle-double-upnil22 {
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            text-align: center;
+            box-sizing: border-box;
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            color: #ffffff;
+            line-height: 40px;
+            font-size: 20px;
+            transition: all 0.2s ease;
+
+        }
     </style>
 </head>
 
@@ -150,14 +209,73 @@
 
 
 
+    
+
+    <!-- navigation bar -->
+    <div>
+        <div class="nav_top">
+
+            <div class="rtext"><a href="#"><i class="fa fa-envelope icon"></i></a><span> </span> order@foodxprs.com</div>   
+            <div class="ltext"><a href="#"><i class="fa fa-phone icon"></i></a><span> </span> +919966773320</div>
+            <div></div>
+            <div class="rtext"><a href="https://www.facebook.com/HealthMealDelivery/"><i class="fa fa-facebook icon top_img"></i>  </a></div>
+            <div class="ltext"><a href="https://twitter.com/Food_Xprs"><i class="fa fa-twitter icon top_img"></i></a></div>
+            <div class="ltext"><a href="https://in.pinterest.com/foodxprs/"><i class="fa fa-pinterest icon top_img"></i></a></div>
+            <div class="ltext"><a href="https://www.instagram.com/foodxprs/"><i class="fa fa-instagram icon top_img"></i></a></div>
+            <div class="ltext"><a href="https://www.linkedin.com/company/food-xprs"><i class="fa fa-linkedin icon top_img"></i></a></div>
+            <div class="ltext"><div style="height: 15px; border-left: 1px solid white;border-right: 1px solid white; text-align: center;"><a href="register.html"><i class="fa fa-user icon top_img"></i></a><span> </span> Register </div></div>
+            <div class="ltext"><a href="login.html"><i class="fa fa-user icon top_img"></i></a><span> </span>Login</div>
+
+
+        </div>
+    </div>
+    <div id="header">
+
+
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="https://foodxprs.com/assets/images/food-xprs.png" class="lozad2"
+                        alt="Food Xprs"></a>
+            </div>
+            <nav class="nav_bar">
+                <a href="index.html">HOME </a>
+                <a href="about.php.html">ABOUT US</a>
+                <a href="why-us.php.html">WHY US</a>
+                <a href="packaging-part.html">PACKAGES</a>
+                <a href="order-online.html">ORDER ONLINE</a>
+                <a href="contact-us.html">CONTACT US</a>
+            </nav>
+            <div class="nav_icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADPz89LS0uWlpb39/eCgoKQkJCxsbH29vZiYmI4ODh0dHTX19empqbFxcXr6+sQEBDh4eEbGxu7u7s0NDR6enpXV1egoKDJyclvb28ODg6IiIhcXFwfHx8ZGRnwNjATAAACZUlEQVR4nO3dCW7CMBCFYRdIw75vbSm9/y2rqKgUVRo72NJoxv93gveUkGBj7BAAAAAAAAAAAAAAAAAAoAKrdjq0Y9qu+tVbH1/sOa7TC7baYZ/UJvZrZtpJnzZrkgputHNm2KRUPGinzHKIF3zVzpjpNVZwq50w2zbScKodMNtULjjRzlfARGw41o5XwFhsONeOV8BcbGj3ZX83Extqpyui8oY77XQFXMWGJ+14BZzEhlbHTX/JY6iBdrwCFmJDD48auWBYaufLtow0NP803cUKhoV2xEyRT6H9+zR6j3bO2ikznFMKhrDSzvm05GnhxuYgap40l3izHlmbcpuNekx53y7kdmDHts/lAwAAAAAAAAAAxjRvy5Edy7e+P1zsh9q/JfU23PfoN7hqx33KdZBa0O5i9ugy9h+f2jkzfKYUfNdOmeU9XtD6Sm95lXfwsFhfXqofwkU7YLZLpKF2vgLkgnYXC93Jy4bsvgrv5JeivS9r/w3Fhh/a8QrYiA210xVR+TX0/zn0/yz1/z708KiRC1bwvdT+2CI6JeV+fFjBGL+CeRrLT5vEubYK5kuD/znvjvffLQAAAAAAAAAAgCHO94myt9fXoddeXxOj+7XFFkD/srtsKHHPPff7Jrrf+9L//qVf2hEzRfegtX2PdmL3qXa+AuSC/vfz9r8nu/999a3v5t2Rn6ba6YqovKH/c2ZsDpseyWcFWV/l3ZFXettfqh/9I7D7c9cqODvP/H+7EhazW5tke5RwhmVoLI+Bk84h9X+WbLA7hko9DzhUcKZzx/m53AAAAAAAAAAAAAAAAABg0zfn21Nf0tdOJAAAAABJRU5ErkJggg=="
+                    alt="">
+            </div>
+        </header>
+    </div>
+
+  
+    
+
+    <!-- navigation bar -->
+
+
+
+
+
+
+
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+
+
 
 
     <div id="black78">
         <br>
+        <h2 id="timer45"> Delivery Status:</h2>
         <h2 id="timer22"></h2>
         <div id="black789">
 
-
+            <br />
 
             <h1 id="black_h1"><a style="color: whitesmoke;">Congratulations</a> Order On The Way.....! 🚚</h1>
 
@@ -170,16 +288,19 @@
 
 
         <div id="rotate44">
-            <button id="pop345" onclick="gobackhome()">Click to go back</button>
+            <button id="pop345" onclick="gobackhome()">Click For New Order</button>
         </div>
 
-        <h1>
-            kducha;ocjad;ocjadpoc
-        </h1>
+        <h6>
+            k
+        </h6>
 
-        <h1>
-            kducha;ocjad;ocjadpoc
-        </h1>
+        <h6>
+            k
+        </h6>
+        <h6>
+            k
+        </h6>
     </div>
 
 
@@ -195,6 +316,99 @@
 
     <!-- 
     <<<<<<<<<<<<<<<>>>>>>>>>>>>>>> -->
+    <!-- 
+    <<<<<<<<<<<<<<<>>>>>>>>>>>>>>> -->
+
+
+
+
+
+
+
+    <a id="totop" href="#" class="animatedzoomInnil21" style="display: inline;"><i
+            class="fa-fa-angle-double-upnil22">↑</i></a>
+
+
+    <!-- 
+    <<<<<<<<<<<<<<<>>>>>>>>>>>>>>> -->
+
+
+    
+
+    <!--footer-->
+    <div class="footer-box">
+        <div class="footer">
+            <div id="f_about" class="f_box">
+                <div>
+                    <h3>ABOUT US</h3>
+                </div>
+                <div>
+                    <p>FoodXprs Lunch Services Pvt Ltd provides Lunch box Services to meet the healthy lunch
+                        requirements of employees and professionals who are unable to prepare it themselves lunch due to
+                        hectic mornings.</p>
+                </div>
+                <div>
+                    <div><i class="fa fa-facebook iconb top_img"></i></div>
+                    <div><i class="fa fa-twitter iconb top_img"></i></div>
+                    <div><i class="fa fa-pinterest iconb top_img"></i></div>
+                    <div><i class="fa fa-instagram iconb top_img"></i></div>
+                    <div><i class="fa fa-linkedin iconb top_img"></i></div>
+                </div>
+            </div>
+            <div id="f_imp" class="f_box">
+                <div>
+                    <h3>IMPORTANT LINK</h3>
+                </div>
+                <div>
+                    <ul>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>How Healthy Is Your Lifestyle </li>
+                    </ul>
+                </div>
+                <div><img src="https://foodxprs.com/assets/images/fssai.png" alt="fssai"></div>
+                <p>Lic No: 13619013001552</p>
+                <div>
+                    <div><a href="https://play.google.com/store/apps/details?id=com.foodxprs&hl=en"></a><img
+                            src="https://foodxprs.com/assets/images/play-store.png" alt="play-store"></div>
+                    <div><a href="https://apps.apple.com/us/app/foodxprs/id1484597519?ls=1"></a><img
+                            src="https://foodxprs.com/assets/images/app-store.png" alt="app-store"></div>
+                </div>
+            </div>
+
+            <div id="f_location" class="f_box">
+                <div>
+                    <h3>LOCATE US</h3>
+                </div>
+                <div class="map"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15225.955834271379!2d78.412183!3d17.436296!3m2!1i1024!2i768!4f13.1!2m1!1s8-2-293%2F82%2FB%2F49%2C%20Gayatri%20Hills%2C%20Jubilee%20Hills%20Road%20No%2010C%2C%20Hyderabad-500033!5e0!3m2!1sen!2sin!4v1615377627901!5m2!1sen!2sin"
+                        width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            </div>
+            <div id="f_contact" class="f_box">
+                <div>
+                    <h3>CONTACT DETAILS</h3>
+                </div>
+                <div style="margin-bottom: 0px; font-weight: bold;">
+                    <p>ADDRESS</p>
+                </div>
+                <div>
+                    <div>
+                        <div><i class="fa fa-map-marker icon"></i></div>
+                        <div><span>FOODXPRS LUNCH SERVICES PVT LTD, 8-2-293/82/B/48, Gayathri Hills, Jubilee Hills Road
+                                No 10C, Hyderabad-500033</span></div>
+                    </div>
+                    <div></div>
+                    <div>
+                        <div><i class="fa fa-envelope icon"></i></div>
+                        <div><span>order@foodxprs.com</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+
+
 
 
     <script>
@@ -222,7 +436,7 @@
         var seet23 = setInterval(nilopp23, 2000)
 
         function gobackhome() {
-            window.location.href = "index.html"
+            window.location.href = "order-online.html"
         }
 
 
@@ -232,13 +446,17 @@
 
 
 
+
         var ii = 60;
         var jj = 15
+        var hoho = "Waiting"
+
+        var hoho22 = "Deliverd"
 
         function nil() {
-            document.getElementById("timer22").innerHTML =   "Min:" + " " + " " + jj + " " + " " + " " + "Sec:" + " " + " " + ii--
-      
+            document.getElementById("timer22").innerHTML = "Min:" + " " + " " + jj + " " + " " + " " + "Sec:" + " " + " " + ii--
 
+            document.getElementById("timer45").innerHTML = "Delivery Status = " + " " + " " + hoho + " " + "⌛"
 
             if (ii == -1) {
 
@@ -246,14 +464,24 @@
 
                 ii = 60
             }
-         
+            if (ii == 55) {
+
+                document.getElementById("timer45").innerHTML = "Delivery Status = " + " " + " " + hoho22 + " " + "✅"
+
+                clearInterval(m)
+
+
+            }
+
+
+
 
         }
         var m = setInterval(nil, 1000)
 
 
-    
-    
+
+
 
 
 
