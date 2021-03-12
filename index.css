@@ -10,6 +10,10 @@ body{
 }
 /* <!-- navigation bar1 --> */
 
+button :focus{
+    outline: none !important;
+}
+
 .nav_top{
     
     width: 100%;
@@ -77,7 +81,8 @@ header{
 }
 .nav_bar>a{
     margin: 0 10px;
-    padding-top: 100px;
+    margin-top: 100px;
+    /* padding-top: 100px; */
     text-decoration: none;
     font-size: 15px;
     color: #2f2c2c;
@@ -443,6 +448,7 @@ li :hover{
     position: relative;
     background-color: transparent;
     color: #5c7f36;
+    outline: none;
 }
 
 #order-buttn>a {
