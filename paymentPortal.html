@@ -12,7 +12,7 @@
     <div class="app-container">
         <div class="top-box"><p><span class="left-icon">&#x2190;</span> CHECK OUT<span class="right-icon">&#xb7;&#xb7;&#xb7;</span> </p></div>
         <div class="middle-box">
-            <h1>1599 <span>₹</span></h1>
+            <h1> <span>₹</span></h1>
             <p>Pay To FoodXprs Lunch Services Pvt Ltd</p>
         </div>
     
@@ -46,6 +46,18 @@
         </div>
         
     </div>
+
+    <script>
+
+        var total = localStorage.getItem("total amount");
+        document.querySelector("h1").textContent = total;
+
+        function redirect(){
+            window.location.href ="end.html";
+        }
+
+        document.querySelector(".pay-btn").addEventListener("click", redirect)
+    </script>
 
     
     
