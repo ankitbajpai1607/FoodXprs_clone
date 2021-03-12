@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="indexNew.css">
+    <link rel="stylesheet" href="index.css">
     <title>Food Express - Order Waiting</title>
 
 
@@ -64,21 +64,22 @@
             text-align: center;
             margin-top: 100px;
             border-radius: 65px;
-           
+
 
         }
 
 
-        #pop345{
+        #pop345 {
             background-color: whitesmoke;
             padding: 20px;
             color: black;
             width: 15%;
             border-radius: 10px;
-            
-          
+
+
         }
-/* 
+
+        /* 
         #pop345 {
             padding: 20px;
             -webkit-text-size-adjust: 100%;
@@ -224,21 +225,31 @@
 
 
 
-    
+
 
     <!-- navigation bar -->
     <div>
         <div class="nav_top">
 
-            <div class="rtext"><a href="#"><i class="fa fa-envelope icon"></i></a><span> </span> order@foodxprs.com</div>   
+            <div class="rtext"><a href="#"><i class="fa fa-envelope icon"></i></a><span> </span> order@foodxprs.com
+            </div>
             <div class="ltext"><a href="#"><i class="fa fa-phone icon"></i></a><span> </span> +919966773320</div>
             <div></div>
-            <div class="rtext"><a href="https://www.facebook.com/HealthMealDelivery/"><i class="fa fa-facebook icon top_img"></i>  </a></div>
-            <div class="ltext"><a href="https://twitter.com/Food_Xprs"><i class="fa fa-twitter icon top_img"></i></a></div>
-            <div class="ltext"><a href="https://in.pinterest.com/foodxprs/"><i class="fa fa-pinterest icon top_img"></i></a></div>
-            <div class="ltext"><a href="https://www.instagram.com/foodxprs/"><i class="fa fa-instagram icon top_img"></i></a></div>
-            <div class="ltext"><a href="https://www.linkedin.com/company/food-xprs"><i class="fa fa-linkedin icon top_img"></i></a></div>
-            <div class="ltext"><div style="height: 15px; border-left: 1px solid white;border-right: 1px solid white; text-align: center;"><a href="register.html"><i class="fa fa-user icon top_img"></i></a><span> </span> Register </div></div>
+            <div class="rtext"><a href="https://www.facebook.com/HealthMealDelivery/"><i
+                        class="fa fa-facebook icon top_img"></i> </a></div>
+            <div class="ltext"><a href="https://twitter.com/Food_Xprs"><i class="fa fa-twitter icon top_img"></i></a>
+            </div>
+            <div class="ltext"><a href="https://in.pinterest.com/foodxprs/"><i
+                        class="fa fa-pinterest icon top_img"></i></a></div>
+            <div class="ltext"><a href="https://www.instagram.com/foodxprs/"><i
+                        class="fa fa-instagram icon top_img"></i></a></div>
+            <div class="ltext"><a href="https://www.linkedin.com/company/food-xprs"><i
+                        class="fa fa-linkedin icon top_img"></i></a></div>
+            <div class="ltext">
+                <div
+                    style="height: 15px; border-left: 1px solid white;border-right: 1px solid white; text-align: center;">
+                    <a href="register.html"><i class="fa fa-user icon top_img"></i></a><span> </span> Register </div>
+            </div>
             <div class="ltext"><a href="login.html"><i class="fa fa-user icon top_img"></i></a><span> </span>Login</div>
 
 
@@ -249,7 +260,7 @@
 
         <header>
             <div class="logo">
-                <a href="index.html"><img src="https://foodxprs.com/assets/images/food-xprs.png" class="lozad2"
+                <a href="./index.html"><img src="https://foodxprs.com/assets/images/food-xprs.png" class="lozad2"
                         alt="Food Xprs"></a>
             </div>
             <nav class="nav_bar">
@@ -265,12 +276,10 @@
                     alt="">
             </div>
         </header>
-    </div>
-
-  
-    
+    </div><br>
 
     <!-- navigation bar -->
+
 
 
 
@@ -348,9 +357,10 @@
     <<<<<<<<<<<<<<<>>>>>>>>>>>>>>> -->
 
 
-    
 
-    <!--footer-->
+
+    <!---footer -->
+
     <div class="footer-box">
         <div class="footer">
             <div id="f_about" class="f_box">
@@ -376,9 +386,9 @@
                 </div>
                 <div>
                     <ul>
-                        <li>Terms & Conditions</li>
-                        <li>Privacy Policy</li>
-                        <li>How Healthy Is Your Lifestyle </li>
+                        <li><a href="#"><span style="color: #fff;">Terms & Conditions</span> </a> </li>
+                        <li><a href="#"><span style="color: #fff;">Privacy Policy</span> </a> </li>
+                        <li><a href="#"><span style="color: #fff;">How Healthy Is Your Lifestyle</span> </a> </li>
                     </ul>
                 </div>
                 <div><img src="https://foodxprs.com/assets/images/fssai.png" alt="fssai"></div>
@@ -421,6 +431,7 @@
             </div>
         </div>
     </div>
+
     <!--footer-->
 
 
@@ -494,17 +505,44 @@
         }
         var m = setInterval(nil, 1000)
 
-
-
-
-
-
-
-
-
-
-
         // >>>>>>>>>>>>>>>>>>>>>>>>
+
+
+        //  <!--footer-->
+
+
+        function sticky() {
+            var head = document.querySelector("#header");
+            head.classList.add("sticky")
+            if (scrollY < 100) {
+                head.classList.remove("sticky")
+            }
+
+        }
+        var cnt = 0;
+        function navber() {
+            var nav = document.querySelector("#n_bar")
+            var mobile = document.querySelector(".mobile_nav")
+
+
+            if (cnt % 2 == 0) {
+                nav.style.display = "none"
+                mobile.style.display = "none"
+
+            } else {
+                nav.style.display = "flex"
+                mobile.style.display = "block"
+
+            }
+            cnt++;
+            console.log(nav)
+        }
+
+
+        window.addEventListener("scroll", sticky)
+
+        document.querySelector(".nav_icon").addEventListener("click", navber)
+
 
     </script>
 </body>
