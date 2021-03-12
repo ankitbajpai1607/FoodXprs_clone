@@ -201,3 +201,274 @@
 		margin-right: 150px;
 	}
 }
+
+/* Container holding the image and the text */
+.order_online4580 {
+	width: 100%;
+	margin-top: -40px;
+	height: 300px;
+}
+/* Container holding the image and the text */
+.container4560 {
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 60px;
+}
+/* Centered text */
+.centered4600 {
+	font-family: "Rancho", cursive;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+
+	text-transform: uppercase;
+	margin-top: -90px;
+}
+/* centere bottom content text */
+.small_data4570 {
+	margin-top: 30px;
+	color: aliceblue;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	font-family: "Hind Siliguri", sans-serif;
+	box-sizing: border-box;
+	color: white;
+	font-size: 26px;
+	opacity: 1;
+}
+.kokate900 {
+	font-size: 20px;
+}
+.kokate900:before {
+	content: "";
+	display: block;
+	width: 150px;
+	height: 2px;
+	background: white;
+	left: 57%;
+	top: 50%;
+	position: absolute;
+	margin-top: 55px;
+}
+.kokate900:after {
+	content: "";
+	display: block;
+	width: 150px;
+	height: 2px;
+	background: white;
+	right: 57%;
+	top: 50%;
+	position: absolute;
+	margin-top: 55px;
+}
+
+/* anwar part in home page */
+#anwar-edit-nil32 {
+	margin-top: 10px;
+}
+
+#anwar-edit-nil33 {
+	width: 30%;
+	margin-left: 140px;
+}
+
+.anwar-edit-nil34 {
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	font-size: 14px;
+	font-family: "Hind Siliguri", sans-serif;
+	font-weight: 400;
+	line-height: 1.714;
+	color: #616f7d;
+	max-width: 130%;
+	height: auto;
+	visibility: visible;
+	animation-name: zoomIn;
+	border-radius: 30px;
+}
+
+.top-title2345 {
+	font-size: 16px;
+	position: relative;
+	display: block;
+	text-align: center;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	font-family: "Hind Siliguri", sans-serif;
+	font-weight: 500;
+	color: #5c7f36;
+	text-transform: uppercase;
+	line-height: 1;
+	font-size: 20px;
+	margin-right: 500px;
+}
+
+.top-title2345:before {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 2px;
+	background: #5c7f36;
+	left: 77%;
+	top: 50%;
+	position: absolute;
+}
+
+.top-title2345:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 2px;
+	background: #5c7f36;
+	right: 77%;
+	top: 50%;
+	position: absolute;
+}
+
+#anwar-edit-nil90 {
+	width: 50%;
+	margin-left: 60%;
+	margin-top: 70px;
+}
+
+.anwar-edit-nil-p1 {
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	font-family: "Hind Siliguri", sans-serif;
+	line-height: 1.714;
+	box-sizing: border-box;
+
+	text-align: justify;
+	font-weight: 700;
+	font-size: 16px;
+	color: #29272e;
+	margin-bottom: 15px;
+}
+
+.anwar-edit-nil-p123 {
+	font-size: 16px;
+	font-family: "Hind Siliguri", sans-serif;
+	font-weight: 400;
+	line-height: 1.714;
+	box-sizing: border-box;
+	margin: 0 0 10px;
+	text-align: justify;
+	margin-bottom: 20px !important;
+	color: #616f7d;
+	font-size: 17px;
+}
+
+.nil-anwar-edit-anchor {
+	color: #616f7d;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#anwar-edit-nil388 {
+	width: 55%;
+	margin-left: 52%;
+	margin-top: -520px;
+}
+
+.anwar-edit-nil34:hover {
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.1);
+}
+
+#anwar-service-heading {
+	text-align: center;
+}
+#anwar-service-heading > p {
+	font-family: sans-serif;
+	margin: 50px auto;
+	color: #5c7f36;
+	text-align: center;
+	font-size: 30px;
+	max-width: 600px;
+	position: relative;
+}
+#anwar-service-heading > p:before {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 2px;
+	background: #5c7f36;
+	left: 70%;
+	top: 50%;
+	position: absolute;
+}
+#anwar-service-heading > p:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 2px;
+	background: #5c7f36;
+	right: 70%;
+	top: 50%;
+	position: absolute;
+}
+#anwar-service-heading > h1 {
+	font-family: "Rancho", cursive;
+}
+
+#anwar-service-sec {
+	width: 1200px;
+	display: flex;
+	margin: auto;
+	padding: 10px;
+}
+
+.anwar-icon-title > h2 {
+	font-family: "Rancho", cursive;
+	text-align: center;
+
+	margin: 60px;
+}
+
+.anwar-icon-img {
+	width: 120px;
+	height: 120px;
+	border: 2px dotted #5c7f36;
+	text-align: center;
+	margin: auto;
+	border-radius: 50%;
+	background-color: #fff;
+	color: #5c7f36;
+}
+.imgicon21 {
+	margin: auto;
+	/* margin-top:5px; */
+	width: 60px;
+	height: 60px;
+}
+.icon21 {
+	font-size: 60px;
+}
+.small_num {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	color: #3f3e44;
+	background-color: #fff;
+	font-size: 15px;
+}
+
+.anwar-icon-desc {
+	text-align: center;
+}
+.anwar-icon-img:hover {
+	background-image: url("https://www.therecipetown.com/wp-content/uploads/2014/01/Vegetable-Pulao.png");
+
+	/* background-color: black; */
+	color: #fff;
+}
+
+/* anwar part in home page */
