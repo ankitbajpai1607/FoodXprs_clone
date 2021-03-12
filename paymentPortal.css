@@ -14,6 +14,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     position: absolute;
+    padding-bottom: 25px;
 }
 .top-box{
     height: 150px;
@@ -110,7 +111,7 @@ body{
 }
 
 .card-num-field, .name-field{
-    width: 270px;
+    width: 260px;
 }
 .date-field, .cvc-field{
     width: 80px;
@@ -133,6 +134,8 @@ body{
     background-color: #9100fd;
     border:none ;
     cursor: pointer;
+    margin-right: 15px;
+    margin-left: 2px;
 
 }
 
