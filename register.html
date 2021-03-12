@@ -395,7 +395,64 @@
     document.querySelector(".nav_icon").addEventListener("click",navber)
 </script>
 
+<script>
+	function register() {
+		var name = document.getElementById("anwar-name").value
+		var mob = document.getElementById("anwar-mob").value
+		var email = document.getElementById("anwar-email").value
+		var user = document.getElementById("anwar-user").value
+		var pass = document.getElementById("anwar-pass").value
+		
 
+
+
+		if (name.length == 0 || mob.length == 0 || email.length == 0 || user.length == 0 || pass.length == 0) {
+			alert("Please fill all the input field")
+			var res = false
+
+		} else {
+			res = true
+			if (res == true) {
+
+				if (mob.length < 10 || mob.length > 10) {
+					alert("Invalid Mobile Number")
+				} else {
+					alert("Registration Successful")
+					window.location.href = "login.html"
+
+					localStorage.setItem('name', name)
+					localStorage.setItem('mob', mob)
+					localStorage.setItem('email', email)
+					localStorage.setItem('user', user)
+					localStorage.setItem('pass', pass)
+					
+				}
+
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+</script>
 
 
 

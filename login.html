@@ -375,6 +375,29 @@
     document.querySelector(".nav_icon").addEventListener("click",navber)
 </script>
 
+<script>
+    function login() {
+        var user2 = document.querySelector('#user2').value;
+        var pass2 = document.querySelector('#pass2').value;
+
+        var user = localStorage.getItem('user')
+        var pass = localStorage.getItem('pass')
+
+
+        //console.log(user2,pass2,user,pass)
+
+        if (user == user2 && pass == pass2) {
+            alert("Login Successful")
+            window.location.href = "index.html";
+            {
+
+
+            }
+        } else {
+            alert("Invalid Username or Password")
+        }
+    }
+</script>
 
 
 
