@@ -35,7 +35,7 @@
             width: 56%;
             height: 460px;
             margin-top: -120px;
-            padding: 20px;
+            /* padding: 10px; */
 
         }
 
@@ -410,6 +410,7 @@
         function onloadonline() {
 
 
+
             // localStorage.clear("total amount");
             var local_data = localStorage.getItem("user_data");
             var local_data = JSON.parse(local_data);
@@ -417,6 +418,7 @@
             // document.getElementById("food_type").value = local_data.food;
 
             var mealpreference = local_data.food;
+
 
             if (mealpreference == "Xprs Millet") {
 
