@@ -44,19 +44,19 @@ You can also take the glimpse of our Project,just follow the below steps:
 
 2. Register Page
 
-   ![FoodXprs](https://github.com/ankitbajpai1607/FoodXprs_clone/blob/master/Images/register.PNG)
+   ![FoodXprs](https://github.com/ankitbajpai1607/FoodXprs_clone/blob/master/Images/register.png)
 
 3. Login Page
 
-   ![FoodXprs](https://github.com/ankitbajpai1607/FoodXprs_clone/blob/master/Images/login.PNG)
+   ![FoodXprs](https://github.com/ankitbajpai1607/FoodXprs_clone/blob/master/Images/login.png)
 
 4. Our Package Page
 
-   ![FoodXprs](https://github.com/ankitbajpai1607/FoodXprs_clone/blob/master/Images/ourPackages.PNG)
+   ![FoodXprs](https://github.com/ankitbajpai1607/FoodXprs_clone/blob/master/Images/ourPackages.png)
 
 5. Online Order Page
 
-   ![FoodXprs](https://github.com/ankitbajpai1607/FoodXprs_clone/blob/master/Images/onlineOrder.PNG)
+   ![FoodXprs](https://github.com/ankitbajpai1607/FoodXprs_clone/blob/master/Images/onlineOrder.png)
 
 <br>
 
