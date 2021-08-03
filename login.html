@@ -197,8 +197,8 @@
             <div class="ltext"><a href="https://in.pinterest.com/foodxprs/"><i class="fa fa-pinterest icon top_img"></i></a></div>
             <div class="ltext"><a href="https://www.instagram.com/foodxprs/"><i class="fa fa-instagram icon top_img"></i></a></div>
             <div class="ltext"><a href="https://www.linkedin.com/company/food-xprs"><i class="fa fa-linkedin icon top_img"></i></a></div>
-            <div class="ltext"><div style="height: 15px; border-left: 1px solid white;border-right: 1px solid white; text-align: center;"><a href="register.html"><i class="fa fa-user icon top_img"></i></a><span> </span> Register </div></div>
-            <div class="ltext"><a href="login.html"><i class="fa fa-user icon top_img"></i></a><span> </span>Login</div>
+            <div class="ltext"><div  style="height: 15px; border-left: 1px solid white;border-right: 1px solid white; text-align: center;"><a href="register.html"><i class="fa fa-user icon top_img"></i></a><span> </span><span id="topRegister"></span>  </div></div>
+            <div class="ltext" ><a href="login.html"><i class="fa fa-user icon top_img"></i></a><span> </span><span id="topLogin"></span></div>
             
             
         </div >
@@ -343,6 +343,19 @@
 
  <!--footer-->
  <script>
+     if (localStorage.getItem("user") === null) {
+		document.querySelector("#topRegister").textContent = "Register";
+        document.querySelector("#topLogin").textContent = "Login";
+	} else {
+        document.querySelector("#topRegister").textContent = localStorage.getItem("user");
+        document.querySelector("#topLogin").textContent = "LogOut";
+
+    }
+    function reset(){
+        if(document.querySelector("#topLogin").textContent === "LogOut"){localStorage.clear();}
+        
+    }
+    document.querySelector("#topLogin").addEventListener("click", reset);
 
     function sticky(){
         var head =document.querySelector("#header");
