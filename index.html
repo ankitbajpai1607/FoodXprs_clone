@@ -390,7 +390,14 @@
 
     }
     function reset(){
-        if(document.querySelector("#topLogin").textContent === "LoogOut"){localStorage.clear();}
+        // localStorage.clear();
+        localStorage.removeItem("user");
+        // if(document.querySelector("#topLogin").textContent === "LogOut"){
+        //     // var remove = localStorage.getItem("user"); 
+        //     // console.log(remove)
+        //     localStorage.clear();
+        //     console.log("jon")
+        // }
         
     }
     document.querySelector("#topLogin").addEventListener("click", reset);
